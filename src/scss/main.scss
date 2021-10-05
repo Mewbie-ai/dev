@@ -1,0 +1,180 @@
+@use "components/footer" as *;
+@use "components/intro" as *;
+@use "components/pages" as *;
+@use "base/video" as *;
+@use "base/mixins" as *;
+@use "base/typography" as *;
+@use "base/widths" as *;
+@use "base/colors" as *;
+
+/* BOOTSTRAP STUFF & MEDIA QUERIES */
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+nav {
+  .nav-item {
+    .active {
+      color: $secondary !important;
+      text-shadow: $primary-border !important;
+    }
+  }
+}
+
+.nav-tabs {
+  .nav-link {
+    padding: 1vw 2vw;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .one {
+    background: $secondary;
+  }
+  .two {
+    background: $light-300;
+  }
+  .three {
+    background: $light-400;
+  }
+  .four {
+    background: $light-500;
+  }
+  button {
+    height: 100%;
+  }
+}
+.tab-content {
+  padding: 2vw;
+  background: $light;
+  color: $primary;
+}
+.display-1 {
+  text-shadow: $light-border !important;
+}
+.slider {
+  .carousel-indicators [data-bs-target] {
+    background: $dark;
+    border-radius: 50%;
+    width: 19px;
+    height: 0;
+  }
+  .carousel-control-prev-icon {
+    background-image: url(../img/LEFT.svg);
+  }
+  .carousel-control-next-icon {
+    background-image: url(../img/RUGHT.svg);
+  }
+}
+.gallery {
+  h2 {
+    text-shadow: $secondary-border !important;
+  }
+  .tab-content {
+    flex-grow: 1;
+    background: none;
+  }
+  .nav-link {
+    color: $light-300;
+  }
+  .carousel {
+    .carousel-indicators {
+      margin: 0 !important;
+    }
+    .carousel-indicators [data-bs-target] {
+      width: 100%;
+      margin: 0;
+      border: none;
+    }
+  }
+  .btn-secondary {
+    box-shadow: $secondary-button;
+  }
+}
+.accordion {
+  color: $primary;
+  text-align: start;
+  li {
+    list-style-type: disc;
+  }
+}
+@include media-breakpoint-down(xl) {
+  .intro {
+    .intro-img {
+      object-position: 0 0;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+  footer {
+    nav {
+      .footer-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 8vh 0;
+      }
+    }
+    ul {
+      height: 100%;
+    }
+  }
+  .navbar {
+    form {
+      justify-content: center !important;
+    }
+  }
+  .hero-img {
+    display: none !important;
+  }
+  .intro-forms {
+    flex-direction: column;
+  }
+}
+@include media-breakpoint-down(md) {
+  .more-about-us {
+    div {
+      flex: 0;
+    }
+  }
+  .uverti {
+    .content {
+      display: block;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .more-about-us {
+    flex-direction: column;
+    .card {
+      min-width: none;
+      width: 100%;
+    }
+  }
+  .container {
+    margin: 0;
+    border: none;
+    .frame1 {
+      display: none;
+    }
+    .frame2 {
+      display: none;
+    }
+  }
+  .gallery {
+    display: block !important;
+  }
+  .intro-forms {
+    .text-end {
+      display: none;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+section {
+  @include mw;
+  @include d-block-center;
+}

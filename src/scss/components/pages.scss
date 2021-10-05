@@ -1,0 +1,176 @@
+@use "../base/colors" as *;
+@use "../base/widths" as *;
+@use "../base/mixins" as *;
+
+/* CARDS */
+
+.more-about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  .text {
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+    transform: rotate(-8deg);
+    .secondary {
+      color: $secondary;
+      text-shadow: $dark-border-dark-shadow;
+    }
+    a {
+      color: $primary;
+      h2:hover {
+        transform: rotate(4deg) scale(1.05);
+        transition: 250ms;
+      }
+    }
+    h2 {
+      font-weight: 600;
+      margin-bottom: 0;
+    }
+  }
+  .sticker1 {
+    position: absolute;
+    top: -29px;
+    left: 9px;
+    width: 32px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #eeeeee;
+    transform: rotate(45deg);
+    overflow: hidden;
+  }
+  .sticker2 {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    width: 32px;
+    height: 140px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #eeeeee;
+    transform: rotate(45deg);
+    overflow: hidden;
+  }
+  .card {
+    position: relative;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    min-height: 150px;
+    min-width: 300px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  .one {
+    background: #ddfde2;
+  }
+  .two {
+    background: #fdf0dd;
+  }
+  .three {
+    background: #d7e6f8;
+  }
+}
+
+/* ABOUT.HTML STAFFLIST */
+/* ACADEMIC.HTML */
+
+.container {
+  position: relative;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  border: 2px solid $primary;
+  .frame1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid $secondary;
+    bottom: -8px;
+    right: -8px;
+    z-index: -1;
+  }
+  .frame2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid #1115;
+    bottom: 8px;
+    right: 8px;
+    z-index: -1;
+  }
+  .content {
+    margin: 8vh 3vw;
+    h1 {
+      text-align: center;
+      text-shadow: $dark-border-dark-shadow;
+      margin-bottom: 1.8rem;
+      color: $secondary;
+    }
+    h3 {
+      padding-top: 5px;
+    }
+    li {
+      margin: 1vw;
+      text-align: center;
+      img {
+        display: block;
+        margin: auto;
+      }
+    }
+  }
+}
+.staff-and-lecturers {
+  ul {
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* DIFFER.HTML TEXT */
+
+.uverti {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    h3 {
+      padding: 4vw 2vw;
+      span {
+        font-size: 2.25rem;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+/* ENTIRE PROGRAMS SECTION */
+
+.link-test {
+  h2 {
+    color: $light;
+    text-shadow: $dark-border-light-shadow2;
+  }
+  li {
+    list-style-type: disc;
+    text-align: start !important;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
+.slider {
+  color: $dark;
+}
+/* CONTACT PAGE */
+.map {
+  background: $light-500;
+}
+.form {
+  h2 {
+    text-shadow: $dark-border-secondary-shadow2;
+    color: $light;
+  }
+}

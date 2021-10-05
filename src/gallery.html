@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spell elc</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="./scss/main.scss">
+</head>
+<body>
+    <include src='./partials/header.html' locals='{
+        "Gallery": "active"
+      }'></include>
+    
+    <main>
+
+        <!-- INTRO -->
+        
+        <div class="intro">
+            <div class="program-hero">
+                <span style="position: absolute;right: 0; bottom: 0;"><img src="img/dot-grid 6.png"></span>
+                <div class="pt-5 pb-3">
+                    <div class="h1 display-1 text-start position-relative text-primary">Documentary
+                        <h1 class="display-1 text-start position-absolute text-primary" style="top: -8px; left: -8px;">Documentary</h1>
+                    </div>
+                </div>
+                <div class="gallery d-flex align-items-start">
+                    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <h1 class="text-center">Category</h1>
+                      <button class="nav-link active" id="v-pills-student-tab" data-bs-toggle="pill" data-bs-target="#v-pills-student" type="button" role="tab" aria-controls="v-pills-student" aria-selected="true">Student Activities</button>
+                      <button class="nav-link" id="v-pills-online-tab" data-bs-toggle="pill" data-bs-target="#v-pills-online" type="button" role="tab" aria-controls="v-pills-online" aria-selected="false">Online Activities</button>
+                      <button class="nav-link" id="v-pills-competition-tab" data-bs-toggle="pill" data-bs-target="#v-pills-competition" type="button" role="tab" aria-controls="v-pills-competition" aria-selected="false">Competition</button>
+                      <button class="nav-link" id="v-pills-training-tab" data-bs-toggle="pill" data-bs-target="#v-pills-training" type="button" role="tab" aria-controls="v-pills-training" aria-selected="false">In-House-Training</button>
+                      <button class="nav-link" id="v-pills-workshop-tab" data-bs-toggle="pill" data-bs-target="#v-pills-workshop" type="button" role="tab" aria-controls="v-pills-workshop" aria-selected="false">Workshop & Seminar</button>
+                    </div>
+                    <div class="tab-content flex-grow-1" id="v-pills-tabContent">
+                      <div class="tab-pane fade show active" id="v-pills-student" role="tabpanel" aria-labelledby="v-pills-student-tab">
+                          <div class="container">
+
+                              <h2>Judul Album #001</h2>
+                              <div id="album1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                  <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#album1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album1" data-bs-slide-to="1" aria-label="Slide 2">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album1" data-bs-slide-to="2" aria-label="Slide 3">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album1" data-bs-slide-to="3" aria-label="Slide 4">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album1" data-bs-slide-to="4" aria-label="Slide 5">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album1" data-bs-slide-to="5" aria-label="Slide 6">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                  </div>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#album1" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#album1" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+                          </div>
+                          <div class="container py-5">
+                              <h2>Judul Album #002</h2>
+                              <div id="album2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                  <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#album2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album2" data-bs-slide-to="1" aria-label="Slide 2">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album2" data-bs-slide-to="2" aria-label="Slide 3">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album2" data-bs-slide-to="3" aria-label="Slide 4">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album2" data-bs-slide-to="4" aria-label="Slide 5">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                    <button type="button" data-bs-target="#album2" data-bs-slide-to="5" aria-label="Slide 6">
+                                      <img src="./img/About Us - Who Are We.jpg" alt="...">
+                                    </button>
+                                  </div>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="./img/About Us - Who Are We.jpg" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <button class="carousel-control-prev" type="button" data-bs-target="#album2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                  </button>
+                                  <button class="carousel-control-next" type="button" data-bs-target="#album2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                  </button>
+                                </div>
+                          </div>
+                          <div class="d-flex gap-2 d-md-flex justify-content-end">
+                            <button class="btn btn-secondary bg-secondary" type="button">Next</button>
+                          </div>
+                      </div>
+                      <div class="tab-pane fade" id="v-pills-online" role="tabpanel" aria-labelledby="v-pills-online-tab">
+                          <img src="./img/academic.png" alt="">
+                        </div>
+                      <div class="tab-pane fade" id="v-pills-competition" role="tabpanel" aria-labelledby="v-pills-competition-tab">
+                          <img src="./img/academic.png" alt="">
+                        </div>
+                      <div class="tab-pane fade" id="v-pills-training" role="tabpanel" aria-labelledby="v-pills-training-tab">
+                          <img src="./img/academic.png" alt="">
+                        </div>
+                      <div class="tab-pane fade" id="v-pills-workshop" role="tabpanel" aria-labelledby="v-pills-workshop-tab">
+                          <img src="./img/academic.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <include src='./partials/footer.html'></include>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@use "../base/colors" as *;
+@use "../base/widths" as *;
+@use "../base/mixins" as *;
+
+.intro {
+  background: $primary;
+  .intro-img {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+    object-position: 0 -200px;
+  }
+  .hero {
+    @include d-block-center;
+    text-align: center;
+    @include mw;
+    padding: 6vh 0;
+    color: $light;
+  }
+  h1 {
+    color: $secondary;
+    letter-spacing: 2px;
+    margin-bottom: 5vh;
+    text-shadow: $dark-border-light-shadow;
+  }
+
+  h2 {
+    line-height: 30px;
+  }
+
+  /* PROGRAMS SECTION */
+
+  .program-hero {
+    h1 {
+      text-shadow: $dark-border-dark-shadow2;
+      line-height: 40px;
+    }
+    .description {
+      display: flex;
+      h3 {
+        flex: 3;
+      }
+      .hero-img {
+        display: flex;
+        justify-content: end;
+        flex: 1;
+      }
+    }
+    .tabs {
+      margin-top: 8vh;
+    }
+    @include d-block-center;
+    @include mw;
+    padding: 6vh 0;
+    color: $light;
+  }
+  .program-links {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    li {
+      flex: 1;
+    }
+    a {
+      position: relative;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .active {
+      position: relative;
+      background: $primary !important;
+      .primary {
+        color: $secondary;
+      }
+      div {
+        position: relative;
+        padding: 1.5vh 2.5vw;
+        span {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          border: 2px solid $light-500;
+          filter: drop-shadow(4px 4px 0px $secondary);
+        }
+      }
+    }
+    .child {
+      background: $light-500;
+    }
+    .child2 {
+      background: $light-400;
+    }
+    .ac {
+      background: $light-500;
+    }
+    .biz {
+      background: $light-400;
+    }
+    h1 {
+      padding: 0;
+      margin: 0;
+      text-shadow: $dark-border-dark-shadow2;
+      line-height: 40px;
+    }
+    .primary {
+      padding-right: 50px;
+      font-size: 40px;
+      color: $light;
+      font-weight: 500;
+    }
+    .secondary {
+      padding-left: 100px;
+      color: $light;
+      font-weight: 500;
+    }
+  }
+}

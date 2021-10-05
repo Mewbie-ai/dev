@@ -1,0 +1,59 @@
+@mixin d-flex-center {
+  display: flex;
+  align-items: center;
+}
+@mixin d-block-center {
+  display: block;
+  margin: auto;
+}
+@mixin underline-animation($color, $time, $origin) {
+  span {
+    opacity: 0;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    background: $color;
+    transform: scaleX(0);
+    transform-origin: $origin;
+    transition: all $time ease-in-out;
+  }
+  &:hover {
+    span {
+      opacity: 0.9;
+      transform: scaleX(1);
+    }
+  }
+}
+@mixin list-row {
+  div {
+    display: flex;
+    flex-direction: row;
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      margin: 0;
+
+      li {
+        position: relative;
+        list-style-type: none;
+      }
+    }
+  }
+}
+@mixin list-col {
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0;
+
+    li {
+      flex: 1;
+      position: relative;
+      list-style-type: none;
+    }
+  }
+}
