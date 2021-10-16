@@ -7,12 +7,22 @@ $light: #fff;
 $light-500: #eee;
 $light-400: #ddd;
 $light-300: #ccc;
-$dark-border-light-shadow: 3px 3px 0 $dark, 2px -2px 0 $dark, -2px 2px 0 $dark, -2px -2px 0 $dark, -2px 0px 0 $dark, 0px -2px 0 $dark, 7px 5px 0 wheat;
-$dark-border-light-shadow2: 1px 1px 0 $dark, 1px -1px 0 $dark, -1px 1px 0 $dark, -1px -1px 0 $dark, -1px 0px 0 $dark, 0px -1px 0 $dark, 2px 2px 1px $light-300;
-$dark-border-dark-shadow: 2px 2px 0 $primary, 2px -2px 0 $primary, -2px 2px 0 $primary, -2px -2px 0 $primary, -2px 0px 0 $primary, 0px -2px 0 $primary, 5px 4px 1px #777, 6px 6px 1px #777;
-$dark-border-dark-shadow2: 2px 2px 0 $primary, 2px -2px 0 $primary, -2px 2px 0 $primary, -2px -2px 0 $primary, -2px 0px 0 $primary, 0px -2px 0 $primary, 4px 4px 1px #777;
-$dark-border-secondary-shadow2: 1px 1px 0 $primary, 1px -1px 0 $primary, -1px 1px 0 $primary, -1px -1px 0 $primary, -1px 0px 0 $primary, 0px -1px 0 $primary, 4px 3px 2px $secondary;
-$primary-border: 1px 1px 0 $primary, 1px -1px 0 $primary, -1px 1px 0 $primary, -1px -1px 0 $primary, -1px 0px 0 $primary, 0px -1px 0 $primary, 2px 2px 1px $light-300;
-$secondary-button: 1px 1px 0 $primary, 1px -1px 0 $primary, -1px 1px 0 $primary, -1px -1px 0 $primary, -1px 0px 0 $primary, 0px -1px 0 $primary, 3px 2px 1px $secondary;
-$secondary-border: 1px 1px 0 $secondary, 1px -1px 0 $secondary, -1px 1px 0 $secondary, -1px -1px 0 $secondary, -1px 0px 0 $secondary, 0px -1px 0 $secondary, 3px 2px 0px $light-500;
-$light-border: 1px 1px 0 $light, 1px -1px 0 $light, -1px 1px 0 $light, -1px -1px 0 $light, -1px 0px 0 $light, 0px -1px 0 $light;
+
+.style1 {
+  color: $info;
+  font-size: 2.25rem !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px 3px 0 $secondary, -1px 3px 0 $secondary;
+}
+.style2 {
+  color: $info;
+  font-size: 2.25rem !important;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 2px 2px $info;
+}
+.style3 {
+  color: $info;
+  font-size: 4.25rem !important;
+  font-weight: bold;
+  text-shadow: 2px 3px 0 $secondary;
+}

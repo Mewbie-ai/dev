@@ -12,7 +12,7 @@
     position: absolute;
     height: 2px;
     width: 100%;
-    bottom: 0;
+    bottom: -3px;
     background: $color;
     transform: scaleX(0);
     transform-origin: $origin;
@@ -55,5 +55,17 @@
       position: relative;
       list-style-type: none;
     }
+  }
+}
+$mqIterations: 19;
+@mixin fontResize($iterations) {
+  $i: 1;
+  @while $i <= $iterations {
+    @media all and (min-width: 100px * $i) {
+      body {
+        font-size: 0.2em * $i;
+      }
+    }
+    $i: $i + 1;
   }
 }

@@ -6,11 +6,10 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   min-height: 300px;
-  background: $primary;
   z-index: 1;
   color: $light;
   a {
-    color: $light;
+    color: #ccc;
     &:hover {
       color: $light;
     }
@@ -31,7 +30,6 @@ footer {
     padding: 0;
 
     li {
-      margin-right: 1.4vw;
       img:hover {
         transform: rotate(15deg);
         transition: 250ms;
@@ -41,13 +39,10 @@ footer {
   ul {
     li {
       position: relative;
-      @include underline-animation($info, 300ms, right center);
     }
   }
   h3 {
     margin: 4vh 0 2vh 0;
-    color: $primary;
-    text-shadow: -1px -1px 0 $secondary, 1px -1px 0 $secondary, -1px 1px 0 $secondary, 1px 1px 0 $secondary, 2px 2px 0 $light;
   }
   h4 {
     font-weight: 400;
@@ -57,14 +52,12 @@ footer {
     line-height: 0;
     margin-bottom: 2vh;
   }
-  .top-padding {
-    background: $secondary;
-    box-shadow: 0px 3px 1px $dark;
-    min-height: 2.4vh;
-  }
   .copyright {
-    background: $dark;
-    padding: 14px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    min-height: 3vh;
     h5 {
       margin: auto;
       text-align: center;

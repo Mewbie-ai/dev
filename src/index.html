@@ -1,119 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spell elc</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
-    <link rel="stylesheet" href="./scss/main.scss" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>spell elc</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="./scss/main.scss">
 </head>
 <body>
+	<include src="partials/header.html" locals='{
+		"Home": "active"
+	  }'></include>
 
-    <include src="partials/header.html" locals='{
-      "Home": "active"
-    }'></include>
-    
-    <!-- INTRO -->
+	<main style="background: #fff;">
 
-    <div class="intro">
-        <img class="intro-img" src="img/About Us - Who Are We.jpg"/>
-        <div class="hero">
-            <span class="position-absolute end-0 overflow-hidden"><img src="img/dot-grid 6.png"></span>
-            <h1>Who We Are ?</h1>
-            <h3>
-                SPELL ELC (English Language & Communication), lembaga yang didirikan di Sidoarjo sejak tahun 2001, adalah pusat bahasa & komunikasi dalam Bhs. Inggris untuk siswa dari segala kelompok usia (anak, remaja, dewasa) yang memiliki tujuan umum (<em>general, integrated</em>) maupun tujuan khusus (<em>academic, professional, business</em>). 
-                <br>
-                <br>
-                Program yang dirancang-kembangkan oleh ahli TESOL &<em> Business Communication </em>ini ditujukan untuk menumbuh-kembangkan dalam diri siswa pengertian dan ketrampilan yang benar dalam <ins>berbahasa Inggris</ins> (<em>listening, speaking, reading, writing, & grammar</em>) serta meningkatkan kemampuan mereka dalam <ins>berkomunikasi</ins> (mengorganisasi & mengekspresikan ide secara efektif) baik secara <ins>lisan</ins> maupun <ins>tertulis</ins>.
-            </h3>
-        </div>
-    </div>
+		<!-- INTRO -->
 
-    <main>
+		<div class="intro" style="background: #eee;">
+			<div style="position: relative;">
+				<div class="slider">
+					<div style="overflow: hidden;">
+					  <div id="first-slider" class="carousel slide" style="max-height: 600px;" data-bs-ride="carousel">
+						<div class="carousel-indicators" style="bottom: 15%;">
+						  <button type="button" data-bs-target="#first-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						  <button type="button" data-bs-target="#first-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  <button type="button" data-bs-target="#first-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+						  <div class="carousel-item active" data-bs-interval="5000">
+							<img src="./img/home11 1.jpg" class="d-block w-100" alt="load failed">
+							<div class="carousel-caption d-none d-md-block">
+								  </div>
+						  </div>
+						  <div class="carousel-item" data-bs-interval="5000">
+							<img src="./img/home11 1.jpg" class="d-block w-100" alt="load failed">
+							<div class="carousel-caption d-none d-md-block">
+							</div>
+						</div>
+						  <div class="carousel-item" data-bs-interval="5000">
+							<img src="./img/home11 1.jpg" class="d-block w-100" alt="load failed">
+							<div class="carousel-caption d-none d-md-block">
+							</div>
+						</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#first-slider" data-bs-slide="prev">
+						  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#first-slider" data-bs-slide="next">
+						  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						  <span class="visually-hidden">Next</span>
+						</button>
+					  </div>
+					</div>
+				</div>
+				<div style="height: 100px; overflow: hidden; position: absolute; width: 100%; bottom: 0;">
+					<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee0; transform:rotate(180deg);">
+						<path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #eee;"></path>
+					</svg>
+				</div>
+			</div>
+			<div class="hero" style="padding: 0;">
+				<div class="about-links">
+					<a href="academic.html" class="bubble">
+						<img src="./img/Bubble-Chat-2ae.png" alt="Academic English Link">
+					</a>
+					<a href="business.html" class="bubble">
+						<img src="./img/Bubble-Chat-2be.png" alt="Business English Link">
+					</a>
+					<a href="children.html" class="bubble">
+						<img src="./img/Bubble-Chat-2ce.png" alt="Children English Link">
+					</a>
+				</div>
+			</div>
+		</div>
 
-        <!-- MIDDLE SECTION -->
-        <section >
-            <div class="staff-and-lecturers">
-                <div class="container">
-                    <span class="frame1"></span>
-                    <span class="frame2"></span>
-                    <div class="content">
-                        <h1>Staff and Lecturers</h1>
-                        <ul>
-                            <li>
-                                <img src="./img/profile/1.png" alt="">
-                                <h3>Drs. Jusuf I. Ibrahim, MTESL.
-                                <br> Director</h3>
-                            </li>
-                            <li>
-                                <img src="./img/profile/2.png" alt="">
-                                <h3>Shirley Angeline Yanis, SS.
-                                <br> Manager</h3>
-                            </li>
-                            <li>
-                                <img src="./img/profile/3.png" alt="">
-                                <h3>Andhiyustina Mukti Kusumaningrum, SS.
-                                <br> Teacher for Academic and Business English</h3>
-                            </li>
-                            <li>
-                                <img src="./img/profile/4.png" alt="">
-                                <h3>Miladiyah, SS., S.Pd.
-                                <br> Teacher for Academic and Business English</h3>
-                            </li>
-                            <li>
-                                <img src="./img/profile/5.png" alt="">
-                                <h3>Nunik Lestari, SS.
-                                <br> Teacher for Academic and Business English</h3>
-                            </li>
-                            <li>
-                                <img src="./img/profile/6.png" alt="">
-                                <h3>Mariani Panjaitan
-                                <br> Teacher for Young Learners</h3>
-                            </li>
-                            <li>
-                                <img src="./img/profile/7.png" alt="">
-                                <h3>Stella Michellia Boenawan, S.Pd.
-                                <br> Teacher for Young Learners</h3>
-                            </li>
-                        </ul>
 
-                    </div>
-                </div>
-            </div>
+		<!-- MIDDLE SECTION -->
+		<div style="height: 150px; overflow: hidden;">
+			<svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee; transform:rotate(180deg);">
+			  <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #fff;"></path>
+			</svg>
+		</div>
+		<div class="program-hero">
+			<div class="container-xl home p-5 d-flex justify-content-between">
+				<div class="text" style="flex:1;">
+						<h1 class="style1 fw-bold">Why Spell ELC ?</h1>
 
-            <!-- CARDS -->
-            
-            <div class="more-about-us">
-                <div class="card two">
-                    <span class="sticker1"></span>
-                    <div class="text">
-                        <h2 class="secondary">How do we teach?</h2>
-                        <a href="how.html"><h2>Click here<span></span></h2></a>
-                    </div>
-                    <span class="sticker2"></span>
-                </div>
-                <div class="card three">
-                    <span class="sticker1"></span>
-                    <div class="text">
-                        <h2 class="secondary">How do we differ <br>from others?</h2>
-                        <a href="differ.html"><h2>Click here<span></span></h2></a>
-                    </div>
-                    <span class="sticker2"></span>
-                </div>
-            </div>
-        </section>
-        
-    <div style="display: none;">
-        <div style="position: relative; min-height: 600px; max-width: 1000px; display: block; margin: auto;">
-          <p style="font-size: 144px; font-weight: 900; z-index: 1; position: absolute; top: 0; left: 5vh;">English</p>
-          <img src="img/teen 1.png" style="z-index: 2; position: absolute; margin-left: 5vw; margin-top: 5vh;">
-          <p style="font-size: 144px; font-weight: 900; z-index: 3; position: absolute; bottom: 0; right: 5vh;">Course</p>
-        </div>
-      </div>
-      
-    </main>
-    <include src="partials/footer.html"></include>
-    <script src="./index.js"></script>
+						<h3 class="text-info fw-bold p-3">
+							<ul style="list-style-type: disc; line-height: 30px;">
+								<li>Since 2001</li>
+								<li>Various and good programs</li>
+								<li>Focus on language and communication skills</li>
+								<li>Caring and competent teacher</li>
+							</ul>
+						</h3>
+
+						<h2>
+							<a href="">
+								> Read About Us
+							</a>
+						</h2>
+				</div>
+				<div style="flex:1;">
+					<div class="slider">
+						<div class="container border-shadow" style="border-radius: 2em; overflow: hidden; padding: 0;">
+						  <div id="second-slider" class="carousel slide" data-bs-ride="carousel">
+							<div class="carousel-indicators">
+							  <button type="button" data-bs-target="#second-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							  <button type="button" data-bs-target="#second-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							  <button type="button" data-bs-target="#second-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+							</div>
+							<div class="carousel-inner">
+							  <div class="carousel-item active" data-bs-interval="10000">
+								<img src="./img/1 11.png" class="d-block w-100" alt="load failed">
+								<div class="carousel-caption d-none d-md-block">
+									  </div>
+							  </div>
+							  <div class="carousel-item" data-bs-interval="10000">
+								<img src="./img/1 11.png" class="d-block w-100" alt="load failed">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							  <div class="carousel-item" data-bs-interval="10000">
+								<img src="./img/1 11.png" class="d-block w-100" alt="load failed">
+								<div class="carousel-caption d-none d-md-block">
+								</div>
+							</div>
+							</div>
+							<button class="carousel-control-prev" type="button" data-bs-target="#second-slider" data-bs-slide="prev">
+							  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Previous</span>
+							</button>
+							<button class="carousel-control-next" type="button" data-bs-target="#second-slider" data-bs-slide="next">
+							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+							  <span class="visually-hidden">Next</span>
+							</button>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section class="video" style="padding: 4vw; background: white;">
+			<div class="video-container">
+				<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+				</iframe>
+			</div>
+		</section>
+
+	</main>
+	<include src="partials/footer copy.html"></include>
+	<script src="./index.js"></script>
 </body>
 </html>

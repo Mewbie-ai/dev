@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/main.77bb5cfd.css">
 <script src="/children.js"></script></head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container-xl" style="z-index: 1;">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
+    <div class="container-fluid container-xl">
       <a class="navbar-brand" href="#"><img src="/Logo-SpellELC.85408fcb.svg" alt="whatsapp-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,14 +20,16 @@
               <form class="d-flex container-fluid justify-content-end">
                   <button class="btn btn-info me-2 text-success rounded-pill" type="button">
                       <div class="d-flex">
-                        <h3 class="m-auto me-1">Whatsapp</h3>
+                        <h3 class="m-auto me-1 fw-bold">Whatsapp</h3>
                         <img src="/Icon-WA.350507a3.svg" alt="whatsapp-logo">
                     </div></button>
-                  <button class="btn btn-lg btn-info text-secondary rounded-pill" type="button"><h3 class="m-auto">Register Now</h3></button>
+                  <button class="btn btn-lg btn-info text-secondary rounded-pill" type="button">
+                    <h3 class="m-auto fw-bold" data-bs-toggle="modal" href="#modal-register" role="button">Register Now</h3>
+                  </button>
               </form>
               <ul class="navbar-nav mb-2 mb-lg-0 h3">
                 <li class="nav-item">
-                  <a class="nav-link text-primary undefined" aria-current="page" href="#">Home</a>
+                  <a class="nav-link text-primary undefined" aria-current="page" href="/index.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -35,7 +37,7 @@
                     About Us
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="/index.html">Who are We?</a></li>
+                    <li><a class="dropdown-item" href="/who.html">Who are We?</a></li>
                     <li><a class="dropdown-item" href="/how.html">How do We Teach?</a></li>
                     <li><a class="dropdown-item" href="/differ.html">How do We Differ?</a></li>
                   </ul>
@@ -64,16 +66,45 @@
       </div>
     </div>
   </nav>
+  <div class="modal fade" id="modal-register" aria-hidden="true" aria-labelledby="Register" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="Register">Choose the registration form</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="about-links">
+            <a href="/contact.html" class="bubble">
+              <img src="/Reg-NOW-buton.18ae5c72.png" alt="Children Program">
+            </a>
+            <a href="/contact.html" class="bubble">
+              <img src="/Reg-NOW-buton2.f91a1580.png" alt="Special Program">
+            </a>
+            <a href="/tests.html" class="bubble">
+              <img src="/Reg-NOW-buton3.fc547194.png" alt="Test">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <main>
     
         <!-- INTRO -->
 
-        <div class="intro">
-            <img class="intro-img" src="/About Us - Who Are We.8677cd08.jpg">
+        <div class="intro" style="background: #eee;">
+            <div style="position: relative;">
+                <img class="intro-img" src="/differ 1.3cb47e08.png" style="object-position: 0 -00px;">
+                <div style="height: 100px; overflow: hidden; position: absolute; width: 100%; bottom: 0;">
+                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee0; transform:rotate(180deg);">
+                        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #eee;"></path>
+                    </svg>
+                </div>
+            </div>
             <div class="hero">
-                <span style="position: absolute;right: 0;"><img src="/dot-grid 6.726f9e8a.png"></span>
-                <h1>How do We differ from others ?</h1>
+                <h1 class="style1">How do We differ from others ?</h1>
                 <h3>
                     Ada 6 perbedaan pokok antara SPELL ELC dengan lembaga bahasa Inggris lain, yang disingkat dengan initial
                 </h3><br>
@@ -84,68 +115,102 @@
 
 
         <!-- MIDDLE SECTION -->
-
-        <section class="uverti">
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee; transform:rotate(180deg);">
+              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #fff;"></path>
+            </svg>
+        </div>
+        <section class="uverti" style="background: #fff;">
 
             <div class="content">
-                
-                <h3>
-                    <span>U</span>nique Institution <br>
-                    Kami bukan hanya lembaga bahasa (<em>Language center</em>) melainkan juga lembaga komunikasi (<em>Communication center</em>), sehingga siswa SPELL bisa diharapkan menggunakan bahasa Inggris dalam melaksanakan tugas sehari-hari (<em>social</em>), sekolah/kuliah (<em>academic</em>), maupun pekerjaan (<em>professional/business</em>).
-                </h3>
-                <h3>
-                    <span>E</span>nglish Medium Instruction <br>
-                    Bahasa pengantar yang digunakan guru di kelas adalah Bahasa Inggris. Guru memberi instruksi, bertanya, menjelaskan, dan bercerita dalam Bahasa Inggris agar siswa terkondisi menggunakan bahasa tersebut dalam <em>listening & speaking</em>. Agar siswa berbicara dalam bahasa Inggris, kami menggunakan pendekatan yang positif (<em>positive reinforcement</em>), bukan dengan pemaksaan atau hukuman.
-                </h3>
-                <h3>
-                    <span>T</span>esting Center, too <br>
-                    Selain sebagai <em>Teaching center</em>, SPELL juga berfungsi sebagai <em>Testing center</em>, memberi layanan bagi siapa saja yang ingin mengukur kemampuan bahasa Inggris mereka dalam bidang <em>Listening, Speaking, Reading, Writing, dan Grammar</em>. Format tes yang tersedia meliputi SPT (SPELL’s <em>Proficiency test</em>), TOEFL (ITP/PBT, iBT), IELTS, dan TOEIC.
-                </h3>
-                <h3>
-                    <span>V</span>arious & Customized Programs <br>
-                    Program bahasa Inggris kami sangat bervariasi: untuk anak-anak (<em>general, conversation, fun</em>), untuk remaja (<em>academic English</em>), dan untuk dewasa (<em>business/professional</em>). Selain itu, siswa yang memiliki keperluan tertentu—sekolah, kuliah, pelatihan, atau kerja di luar negeri—bisa memesan program kami sesuai kebutuhan.
-                </h3>
-                <h3>
-                    <span>R</span>egular Student Monitoring <br>
-                    Dalam proses belajar siswa, kami selalu memantau perkembangan akademik dan sikap siswa di kelas, serta memberikan laporan tertulis (<em>report</em>) di tengah dan di akhir term. Laporannya meliputi aspek <em>Grammar, Vocabulary, Spelling, Fluency, Pronunciation, Organization, dan Content</em>. Siswa yang bermasalah akan ditangani secara khusus oleh Manajemen. Bila perlu, siswa ini akan diberi pelajaran tambahan (<em>tutorial</em>).
-                </h3>
-                <h3>
-                    <span>I</span>ntegrated Curriculum <br>
-                    Selain menekankankan <em>Oral English (listening, speaking) dan Written English (reading, writing)</em>, sebagai lembaga bahasa & komunikasi, kami juga mengintegrasikan ketrampilan bahasa ini dalam kegiatan berkomunikasi seperti <em>Story-telling</em> (untuk anak-anak) dan <em>Internet-based Research & Presentation</em> (untuk remaja & dewasa).
-                </h3>
-
-            </div>
-
-            <!-- CARDS -->
-            
-            <div class="more-about-us">
-                <div class="card one">
-                    <span class="sticker1"></span>
-                    <div class="text">
-                        <h2 class="secondary">Who are We?</h2>
-                        <a href="/index.html"><h2>Click here<span></span></h2></a>
-                    </div>
-                    <span class="sticker2"></span>
+                <div class="d-flex">
+                    <span>
+                        <h1 class="style3">U</h1>
+                    </span>
+                    <h3>
+                        nique Institution <br>
+                        Kami bukan hanya lembaga bahasa (<em>Language center</em>) melainkan juga lembaga komunikasi (<em>Communication center</em>), sehingga siswa SPELL bisa diharapkan menggunakan bahasa Inggris dalam melaksanakan tugas sehari-hari (<em>social</em>), sekolah/kuliah (<em>academic</em>), maupun pekerjaan (<em>professional/business</em>).
+                    </h3>
                 </div>
-                <div class="card two">
-                    <span class="sticker1"></span>
-                    <div class="text">
-                        <h2 class="secondary">How do we differ <br>from others?</h2>
-                        <a href="/how.html"><h2>Click here<span></span></h2></a>
-                    </div>
-                    <span class="sticker2"></span>
+                <div class="d-flex">
+                    <span>
+                        <h1 class="style3">V</h1>
+                    </span>
+                    <h3>
+                        arious & Customized Programs <br>
+                        Program bahasa Inggris kami sangat bervariasi: untuk anak-anak (<em>general, conversation, fun</em>), untuk remaja (<em>academic English</em>), dan untuk dewasa (<em>business/professional</em>). Selain itu, siswa yang memiliki keperluan tertentu—sekolah, kuliah, pelatihan, atau kerja di luar negeri—bisa memesan program kami sesuai kebutuhan.
+                    </h3>
+                </div>
+                <div class="d-flex">
+                    <span>
+                        <h1 class="style3">E</h1>
+                    </span>
+                    <h3>
+                        nglish Medium Instruction <br>
+                        Bahasa pengantar yang digunakan guru di kelas adalah Bahasa Inggris. Guru memberi instruksi, bertanya, menjelaskan, dan bercerita dalam Bahasa Inggris agar siswa terkondisi menggunakan bahasa tersebut dalam <em>listening & speaking</em>. Agar siswa berbicara dalam bahasa Inggris, kami menggunakan pendekatan yang positif (<em>positive reinforcement</em>), bukan dengan pemaksaan atau hukuman.
+                    </h3>
+                </div>
+                <div class="d-flex">
+                    <span>
+                        <h1 class="style3">R</h1>
+                    </span>
+                    <h3>
+                        egular Student Monitoring <br>
+                        Dalam proses belajar siswa, kami selalu memantau perkembangan akademik dan sikap siswa di kelas, serta memberikan laporan tertulis (<em>report</em>) di tengah dan di akhir term. Laporannya meliputi aspek <em>Grammar, Vocabulary, Spelling, Fluency, Pronunciation, Organization, dan Content</em>. Siswa yang bermasalah akan ditangani secara khusus oleh Manajemen. Bila perlu, siswa ini akan diberi pelajaran tambahan (<em>tutorial</em>).
+                    </h3>
+                </div>
+                <div class="d-flex">
+                    <span>
+                        <h1 class="style3">T</h1>
+                    </span>
+                    <h3>
+                        esting Center, too <br>
+                        Selain sebagai <em>Teaching center</em>, SPELL juga berfungsi sebagai <em>Testing center</em>, memberi layanan bagi siapa saja yang ingin mengukur kemampuan bahasa Inggris mereka dalam bidang <em>Listening, Speaking, Reading, Writing, dan Grammar</em>. Format tes yang tersedia meliputi SPT (SPELL’s <em>Proficiency test</em>), TOEFL (ITP/PBT, iBT), IELTS, dan TOEIC.
+                    </h3>
+                </div>
+                <div class="d-flex">
+                    <span>
+                        <h1 class="style3">I</h1>
+                    </span>
+                    <h3>
+                        ntegrated Curriculum <br>
+                        Selain menekankankan <em>Oral English (listening, speaking) dan Written English (reading, writing)</em>, sebagai lembaga bahasa & komunikasi, kami juga mengintegrasikan ketrampilan bahasa ini dalam kegiatan berkomunikasi seperti <em>Story-telling</em> (untuk anak-anak) dan <em>Internet-based Research & Presentation</em> (untuk remaja & dewasa).
+                    </h3>
                 </div>
             </div>
         </section>
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee;">
+              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #fff;"></path>
+            </svg>
+        </div>
+
+        <!-- CARDS -->
+        <div style="background: #eee;">
+            <section>
+                <div class="about-links">
+                    <a href="/who.html" class="bubble">
+                        <img src="/Bubble-Chat-Who2.68ba5248.png" alt="How Do We Teach?">
+                    </a>
+                    <a href="/how.html" class="bubble">
+                        <img src="/Bubble-Chat-Who3.10babb27.png" alt="How Do We Differ?">
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
-    <footer>
-    <div class="top-padding"></div>
+    <footer style="background: #444;">
+    <div style="height: 110px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#444;">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #eee;"></path>
+        </svg>
+      </div>
     <nav>
-        <div class="footer-nav container-xl">
+        <div class="footer-nav container-xl p-3">
             <ul class="about-us">
                 <h3>About Us</h3>
                 <li>
-                    <a href="/index.html">
+                    <a href="/who.html">
                         <h4>Who are We?</h4>
                     </a>
                     <span></span>
@@ -207,7 +272,7 @@
             </ul>
             <ul class="follow-us">
                     <h3>Follow Us</h3>
-                <ul class="socials">
+                <ul class="socials gap-3">
                     <li>
                         <a href="">
                             <img src="/fb.5f919bc5.svg" alt="facebook">

@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light container-xl" style="z-index: 1;">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
+    <div class="container-fluid container-xl">
       <a class="navbar-brand" href="#"><img src='img/Logo-SpellELC.svg' alt='whatsapp-logo'/></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -9,14 +9,16 @@
               <form class="d-flex container-fluid justify-content-end">
                   <button class="btn btn-info me-2 text-success rounded-pill" type="button">
                       <div class='d-flex'>
-                        <h3 class="m-auto me-1">Whatsapp</h3>
+                        <h3 class="m-auto me-1 fw-bold">Whatsapp</h3>
                         <img src='img/socials/Icon-WA.svg' alt='whatsapp-logo'/>
                     </div></button>
-                  <button class="btn btn-lg btn-info text-secondary rounded-pill" type="button"><h3 class="m-auto">Register Now</h3></button>
+                  <button class="btn btn-lg btn-info text-secondary rounded-pill" type="button">
+                    <h3 class="m-auto fw-bold" data-bs-toggle="modal" href="#modal-register" role="button">Register Now</h3>
+                  </button>
               </form>
               <ul class="navbar-nav mb-2 mb-lg-0 h3">
                 <li class="nav-item">
-                  <a class="nav-link text-primary {{Home}}" aria-current="page" href="#">Home</a>
+                  <a class="nav-link text-primary {{Home}}" aria-current="page" href="./index.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -24,7 +26,7 @@
                     About Us
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./index.html">Who are We?</a></li>
+                    <li><a class="dropdown-item" href="./who.html">Who are We?</a></li>
                     <li><a class="dropdown-item" href="./how.html">How do We Teach?</a></li>
                     <li><a class="dropdown-item" href="./differ.html">How do We Differ?</a></li>
                   </ul>
@@ -53,3 +55,26 @@
       </div>
     </div>
   </nav>
+  <div class="modal fade" id="modal-register" aria-hidden="true" aria-labelledby="Register" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="Register">Choose the registration form</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="about-links">
+            <a href="contact.html" class="bubble">
+              <img src="./img/Reg-NOW-buton.png" alt="Children Program">
+            </a>
+            <a href="contact.html" class="bubble">
+              <img src="./img/Reg-NOW-buton2.png" alt="Special Program">
+            </a>
+            <a href="tests.html" class="bubble">
+              <img src="./img/Reg-NOW-buton3.png" alt="Test">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

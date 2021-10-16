@@ -11,32 +11,25 @@
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 nav {
+  box-shadow: 5px 5px 5px #1115;
   .nav-item {
     .active {
-      color: $secondary !important;
-      text-shadow: $primary-border !important;
+      color: $info;
+      font-weight: 600;
+      text-decoration: underline;
     }
   }
 }
 
 .nav-tabs {
+  border-bottom: none;
   .nav-link {
+    background: $info;
+    color: $light;
+    font-weight: 400;
     padding: 1vw 2vw;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-  }
-
-  .one {
-    background: $secondary;
-  }
-  .two {
-    background: $light-300;
-  }
-  .three {
-    background: $light-400;
-  }
-  .four {
-    background: $light-500;
   }
   button {
     height: 100%;
@@ -46,54 +39,123 @@ nav {
   padding: 2vw;
   background: $light;
   color: $primary;
+
+  border-bottom-left-radius: 2.5em;
+  border-bottom-right-radius: 2.5em;
+  border-top-right-radius: 2.5em;
 }
-.display-1 {
-  text-shadow: $light-border !important;
-}
+
 .slider {
   .carousel-indicators [data-bs-target] {
-    background: $dark;
+    width: 12px;
+    height: 12px;
+    border: 2px solid $primary;
     border-radius: 50%;
-    width: 19px;
-    height: 0;
+    opacity: 1;
+    box-shadow: 1px 1px $primary;
+  }
+  .carousel-indicators .active {
+    background: $secondary;
   }
   .carousel-control-prev-icon {
-    background-image: url(../img/LEFT.svg);
+    background-image: url("../img/prev.png");
   }
   .carousel-control-next-icon {
-    background-image: url(../img/RUGHT.svg);
+    background-image: url("../img/next.png");
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 1.5rem;
+    height: 3rem;
+  }
+  .carousel-item {
+    img {
+      width: 100%;
+    }
+  }
+  .slider-img {
+    max-width: 150px;
+  }
+  .title {
+    padding: 1.5rem;
+  }
+  .caption {
+    padding: 3rem;
   }
 }
 .gallery {
-  h2 {
-    text-shadow: $secondary-border !important;
+  gap: 20px;
+  .nav {
+    flex: 1;
   }
   .tab-content {
-    flex-grow: 1;
+    flex: 3;
     background: none;
   }
   .nav-link {
-    color: $light-300;
+    color: $info;
+    text-align: start;
+    border-radius: 2rem;
+    min-width: 177px;
+  }
+  .nav-pills .nav-link.active,
+  .nav-pills .show > .nav-link {
+    color: $info;
+    background-color: $secondary;
+    border: 1px solid $info;
+    box-shadow: 1px 1px $info;
   }
   .carousel {
+    border-radius: 30px;
+    overflow: hidden;
     .carousel-indicators {
       margin: 0 !important;
+    }
+    .carousel-control-prev-icon {
+      background-image: url("../img/prev.png");
+    }
+    .carousel-control-next-icon {
+      background-image: url("../img/next.png");
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      width: 2rem;
+      height: 4rem;
     }
     .carousel-indicators [data-bs-target] {
       width: 100%;
       margin: 0;
       border: none;
+      height: auto;
+      padding: 0;
+      border-radius: unset;
     }
   }
-  .btn-secondary {
-    box-shadow: $secondary-button;
+  .carousel-caption {
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1116;
+    height: 175px;
   }
 }
 .accordion {
   color: $primary;
   text-align: start;
+  border-radius: 30px;
+  overflow: hidden;
   li {
     list-style-type: disc;
+  }
+  .accordion-button:not(.collapsed) {
+    color: #202250;
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .accordion-button {
+    background: $info;
+    color: #fff;
   }
 }
 @include media-breakpoint-down(xl) {
@@ -104,6 +166,20 @@ nav {
   }
 }
 @include media-breakpoint-down(lg) {
+  .staff-and-lecturers {
+    ul {
+      display: block;
+      li:nth-child(2n + 1) {
+        flex-direction: row-reverse;
+        .text-end {
+          text-align: left !important;
+        }
+      }
+    }
+    span {
+      display: none;
+    }
+  }
   footer {
     nav {
       .footer-nav {
@@ -129,10 +205,8 @@ nav {
   }
 }
 @include media-breakpoint-down(md) {
-  .more-about-us {
-    div {
-      flex: 0;
-    }
+  html {
+    font-size: 87.5%;
   }
   .uverti {
     .content {
@@ -141,40 +215,38 @@ nav {
   }
 }
 @include media-breakpoint-down(sm) {
-  .more-about-us {
-    flex-direction: column;
-    .card {
-      min-width: none;
-      width: 100%;
-    }
-  }
-  .container {
-    margin: 0;
-    border: none;
-    .frame1 {
-      display: none;
-    }
-    .frame2 {
-      display: none;
-    }
+  html {
+    font-size: 75%;
   }
   .gallery {
-    display: block !important;
+    flex-direction: column;
+    .nav {
+      flex-direction: row !important;
+      gap: 10px;
+    }
+    .nav-link {
+      width: fit-content;
+      min-width: 0;
+    }
   }
   .intro-forms {
     .text-end {
       display: none;
     }
   }
+  .home {
+    flex-direction: column;
+  }
 }
 
 a {
   text-decoration: none;
 }
-li {
+ul {
   list-style-type: none;
 }
 section {
   @include mw;
   @include d-block-center;
+  padding: 5vh 2vw;
 }

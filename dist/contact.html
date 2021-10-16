@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="/main.77bb5cfd.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container-xl" style="z-index: 1;">
-    <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
+    <div class="container-fluid container-xl">
       <a class="navbar-brand" href="#"><img src="/Logo-SpellELC.85408fcb.svg" alt="whatsapp-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -20,14 +20,16 @@
               <form class="d-flex container-fluid justify-content-end">
                   <button class="btn btn-info me-2 text-success rounded-pill" type="button">
                       <div class="d-flex">
-                        <h3 class="m-auto me-1">Whatsapp</h3>
+                        <h3 class="m-auto me-1 fw-bold">Whatsapp</h3>
                         <img src="/Icon-WA.350507a3.svg" alt="whatsapp-logo">
                     </div></button>
-                  <button class="btn btn-lg btn-info text-secondary rounded-pill" type="button"><h3 class="m-auto">Register Now</h3></button>
+                  <button class="btn btn-lg btn-info text-secondary rounded-pill" type="button">
+                    <h3 class="m-auto fw-bold" data-bs-toggle="modal" href="#modal-register" role="button">Register Now</h3>
+                  </button>
               </form>
               <ul class="navbar-nav mb-2 mb-lg-0 h3">
                 <li class="nav-item">
-                  <a class="nav-link text-primary undefined" aria-current="page" href="#">Home</a>
+                  <a class="nav-link text-primary undefined" aria-current="page" href="/index.html">Home</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -35,7 +37,7 @@
                     About Us
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="/index.html">Who are We?</a></li>
+                    <li><a class="dropdown-item" href="/who.html">Who are We?</a></li>
                     <li><a class="dropdown-item" href="/how.html">How do We Teach?</a></li>
                     <li><a class="dropdown-item" href="/differ.html">How do We Differ?</a></li>
                   </ul>
@@ -64,64 +66,97 @@
       </div>
     </div>
   </nav>
-    
-    <main>
-        <div class="intro">
-            <div class="program-hero">
-                <span style="position: absolute;right: 0; bottom: 0;"><img src="/dot-grid 6.726f9e8a.png"></span>
-                <div class="pt-5 pb-3">
-                    <div class="h1 display-1 text-start position-relative text-primary">We're Open!
-                        <h1 class="display-1 text-start position-absolute text-primary" style="top: -8px; left: -8px;">We're Open!</h1>
-                    </div>
-                </div>
-                <section class="intro-forms row" style="margin-right: 0;">
-                  <form class="container col" style="border: none;">
-                    <h2>SPELL ELC Kota Sidoarjo</h2>
-                    <div class="row align-items-center">
-                      <label for="intro-address" class="col-sm-3 col-form-label"><div class="row"><div class="col">Address</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-address" placeholder=""></div>
-                      <label for="intro-phone" class="col-sm-3 col-form-label"><div class="row"><div class="col">Phone</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="telp" class="form-control-plaintext text-light" id="intro-phone" placeholder=""></div>
-                      <label for="intro-wa" class="col-sm-3 col-form-label"><div class="row"><div class="col">Whatsapp</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-wa" placeholder=""></div>
-                      <label for="intro-email" class="col-sm-3 col-form-label"><div class="row"><div class="col">Email</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="email" class="form-control-plaintext text-light" id="intro-email" placeholder=""></div>
-                      <label for="intro-ig" class="col-sm-3 col-form-label"><div class="row"><div class="col">Instagram</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-ig" placeholder=""></div>
-                      <label for="intro-fb" class="col-sm-3 col-form-label"><div class="row"><div class="col">Facebook</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-fb" placeholder=""></div>
-                    </div>
-                  </form>
-                  <form class="container col" style="border: none;">
-                    <h2>SPELL ELC Kota Bangkalan</h2>
-                    <div class="row align-items-center">
-                      <label for="intro-address2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Address</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-address2" placeholder=""></div>
-                      <label for="intro-phone2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Phone</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="telp" class="form-control-plaintext text-light" id="intro-phone2" placeholder=""></div>
-                      <label for="intro-wa2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Whatsapp</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-wa2" placeholder=""></div>
-                      <label for="intro-email2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Email</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="email" class="form-control-plaintext text-light" id="intro-email2" placeholder=""></div>
-                      <label for="intro-ig2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Instagram</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-ig2" placeholder=""></div>
-                      <label for="intro-fb2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Facebook</div><div class="col text-end">:</div></div></label>
-                      <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-fb2" placeholder=""></div>
-                    </div>
-                  </form>
-                </section>
-            </div>
+  <div class="modal fade" id="modal-register" aria-hidden="true" aria-labelledby="Register" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="Register">Choose the registration form</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-          <div class="map p-5 border-0">
-            <img class="img-fluid rounded-3 mx-auto" src="/maps 1.73187875.png" alt="">
+        <div class="modal-body">
+          <div class="about-links">
+            <a href="/contact.html" class="bubble">
+              <img src="/Reg-NOW-buton.18ae5c72.png" alt="Children Program">
+            </a>
+            <a href="/contact.html" class="bubble">
+              <img src="/Reg-NOW-buton2.f91a1580.png" alt="Special Program">
+            </a>
+            <a href="/tests.html" class="bubble">
+              <img src="/Reg-NOW-buton3.fc547194.png" alt="Test">
+            </a>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <main>
+      <div class="bg-info">
+        <h1 class="container display-2 fw-bold pt-5 px-5 text-light">Contact Us</h1>
+        <img src="/dot-grid 6.726f9e8a.png" alt="" style="position: absolute; right: 0; top: 0; overflow: hidden; max-height: 340px;">
+        <div style="height: 100px; overflow: hidden;">
+          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#fff;">
+            <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #3e4095;"></path>
+          </svg>
+        </div>
+      </div>
+      <section>
+        <div class="intro-forms row">
+          <form class="container col">
+            <h2>SPELL ELC Kota Sidoarjo</h2>
+            <div class="row align-items-center">
+              <label for="intro-address" class="col-sm-3 col-form-label"><div class="row"><div class="col">Address</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-address" placeholder=""></div>
+              <label for="intro-phone" class="col-sm-3 col-form-label"><div class="row"><div class="col">Phone</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="telp" class="form-control-plaintext text-light" id="intro-phone" placeholder=""></div>
+              <label for="intro-wa" class="col-sm-3 col-form-label"><div class="row"><div class="col">Whatsapp</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-wa" placeholder=""></div>
+              <label for="intro-email" class="col-sm-3 col-form-label"><div class="row"><div class="col">Email</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="email" class="form-control-plaintext text-light" id="intro-email" placeholder=""></div>
+              <label for="intro-ig" class="col-sm-3 col-form-label"><div class="row"><div class="col">Instagram</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-ig" placeholder=""></div>
+              <label for="intro-fb" class="col-sm-3 col-form-label"><div class="row"><div class="col">Facebook</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-fb" placeholder=""></div>
+            </div>
+          </form>
+          <form class="container col" style="border: none;">
+            <h2>SPELL ELC Kota Bangkalan</h2>
+            <div class="row align-items-center">
+              <label for="intro-address2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Address</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-address2" placeholder=""></div>
+              <label for="intro-phone2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Phone</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="telp" class="form-control-plaintext text-light" id="intro-phone2" placeholder=""></div>
+              <label for="intro-wa2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Whatsapp</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-wa2" placeholder=""></div>
+              <label for="intro-email2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Email</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="email" class="form-control-plaintext text-light" id="intro-email2" placeholder=""></div>
+              <label for="intro-ig2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Instagram</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-ig2" placeholder=""></div>
+              <label for="intro-fb2" class="col-sm-3 col-form-label"><div class="row"><div class="col">Facebook</div><div class="col text-end">:</div></div></label>
+              <div class="col-sm-9"><input type="text" class="form-control-plaintext text-light" id="intro-fb2" placeholder=""></div>
+            </div>
+          </form>
+        </div>
+        <button class="btn" style="background: #eee; border-radius: 10px;"><div class="d-flex align-items-center fw-bold gap-2">Message Us: <img src="/Icon-WA.350507a3.svg" alt="Whatsapp"></div></button>
+      </section>
+      <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#fff; transform:rotate(180deg);">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #3e4095;"></path>
+        </svg>
+      </div>
+      <div class="p-5 border-0 bg-info">
+        <img class="img-fluid rounded-3 mx-auto" src="/maps 1.73187875.png" alt="">
+      </div>
+      <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee;">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #3e4095;"></path>
+        </svg>
+      </div>
+      <div style="background: #eee;">
         <section class="form">
-          <div class="container">
-            <span class="frame1"></span>
-            <span class="frame2"></span>
+          <div class="container border-shadow">
             <div class="content">
               <form>
-                <h2>Ask Away!</h2>
+                <h2 class="text-info fw-bold">Drop Your Question Here</h2>
                 <div class="row mb-3">
                   <label for="name" class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
@@ -148,20 +183,26 @@
                     </div>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div class="d-flex justify-content-end">
+                  <button type="submit" class="align-self-end btn btn-secondary fw-bold" style="border: 1px solid #3e4095;border-radius: 10px; box-shadow: 2px 2px #3e4095;">Submit</button>
+                </div>
               </form>
             </div>
-          </div>
-        </section>
+        </div></section>
+      </div>
     </main>
-    <footer>
-    <div class="top-padding"></div>
+    <footer style="background: #444;">
+    <div style="height: 110px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#444;">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #eee;"></path>
+        </svg>
+      </div>
     <nav>
-        <div class="footer-nav container-xl">
+        <div class="footer-nav container-xl p-3">
             <ul class="about-us">
                 <h3>About Us</h3>
                 <li>
-                    <a href="/index.html">
+                    <a href="/who.html">
                         <h4>Who are We?</h4>
                     </a>
                     <span></span>
@@ -223,7 +264,7 @@
             </ul>
             <ul class="follow-us">
                     <h3>Follow Us</h3>
-                <ul class="socials">
+                <ul class="socials gap-3">
                     <li>
                         <a href="">
                             <img src="/fb.5f919bc5.svg" alt="facebook">
