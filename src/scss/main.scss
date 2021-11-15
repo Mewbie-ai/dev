@@ -16,14 +16,42 @@ nav {
     .active {
       color: $info;
       font-weight: 600;
-      text-decoration: underline;
+      span {
+        opacity: 1;
+        transform: scaleX(1);
+      }
     }
   }
 }
-
+.dropdown-menu[data-bs-popper] {
+  margin-top: 1.125rem;
+}
+.dropdown-menu {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 3px 3px 0 $info-200;
+}
+.dropdown-item:hover {
+  color: $secondary;
+  background: url("~img/Rectangle 92.svg") no-repeat center/ 100% auto;
+}
+.max {
+  .nav-tabs .nav-item {
+    flex: 1;
+    .nav-link {
+      width: 100%;
+    }
+  }
+  .tab-content {
+    border-top-right-radius: 0;
+  }
+}
 .nav-tabs {
   border-bottom: none;
+  gap: 1px;
   .nav-link {
+    @include underline-animation($info, 250ms, left center);
+    border: 0;
     background: $info;
     color: $light;
     font-weight: 400;
@@ -35,14 +63,24 @@ nav {
     height: 100%;
   }
 }
+.nav-tabs li:nth-child(3) button {
+  background: #5a4b8f;
+}
+.nav-tabs li:nth-child(4) button {
+  background: #7f71ad;
+}
 .tab-content {
-  padding: 2vw;
+  padding: 2rem;
   background: $light;
   color: $primary;
 
   border-bottom-left-radius: 2.5em;
   border-bottom-right-radius: 2.5em;
   border-top-right-radius: 2.5em;
+
+  .tab-pane {
+    line-height: 1.875rem;
+  }
 }
 
 .slider {
@@ -73,6 +111,10 @@ nav {
       width: 100%;
     }
   }
+  .carousel-item.active {
+    display: flex;
+    justify-content: center;
+  }
   .slider-img {
     max-width: 150px;
   }
@@ -82,7 +124,34 @@ nav {
   .caption {
     padding: 3rem;
   }
+  #testimony {
+    .carousel-item {
+      flex-direction: column;
+    }
+    .carousel-item.active {
+      justify-content: unset;
+    }
+    .caption p {
+      height: 50px;
+      overflow-y: auto;
+    }
+  }
+  #first-slider .carousel-item {
+    img {
+      min-width: 600px;
+      max-height: 600px;
+    }
+    .carousel-caption {
+      right: 0;
+      left: 0;
+      width: 100%;
+      background: #111a;
+      height: 90px;
+      padding: 0.75rem 0;
+    }
+  }
 }
+
 .gallery {
   gap: 20px;
   .nav {
@@ -143,7 +212,7 @@ nav {
 .accordion {
   color: $primary;
   text-align: start;
-  border-radius: 30px;
+  border-radius: 3rem;
   overflow: hidden;
   li {
     list-style-type: disc;
@@ -154,15 +223,42 @@ nav {
     box-shadow: none;
   }
   .accordion-button {
+    padding-left: 2.25rem;
     background: $info;
     color: #fff;
   }
+  .accordion-item {
+    border: none;
+    margin-bottom: 2px;
+  }
+  .accordion-body {
+    padding: 1rem 2.25rem;
+  }
+}
+.accordion .accordion-item:nth-child(2) .accordion-button {
+  background: $info;
+}
+.accordion .accordion-item:nth-child(3) .accordion-button {
+  background: $info-300;
+}
+.accordion .accordion-item:nth-child(4) .accordion-button {
+  background: $info-400;
+}
+.accordion .accordion-item:nth-child(5) .accordion-button {
+  background: $info-500;
 }
 @include media-breakpoint-down(xl) {
-  .intro {
-    .intro-img {
-      object-position: 0 0;
-    }
+  .intro .intro-img {
+    object-position: 0 0;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 @include media-breakpoint-down(lg) {
@@ -176,26 +272,25 @@ nav {
         }
       }
     }
-    span {
+    .head {
+      justify-content: start !important;
+    }
+    .fake {
       display: none;
     }
   }
   footer {
-    nav {
-      .footer-nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin: 8vh 0;
-      }
+    nav .footer-nav {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 8vh 0;
     }
     ul {
       height: 100%;
     }
   }
-  .navbar {
-    form {
-      justify-content: center !important;
-    }
+  .navbar form {
+    justify-content: center !important;
   }
   .hero-img {
     display: none !important;
@@ -208,10 +303,8 @@ nav {
   html {
     font-size: 87.5%;
   }
-  .uverti {
-    .content {
-      display: block;
-    }
+  .uverti .content {
+    display: block;
   }
 }
 @include media-breakpoint-down(sm) {
@@ -229,13 +322,12 @@ nav {
       min-width: 0;
     }
   }
-  .intro-forms {
-    .text-end {
-      display: none;
-    }
+  .intro-forms .text-end {
+    display: none;
   }
   .home {
     flex-direction: column;
+    min-height: 75vh;
   }
 }
 
@@ -247,6 +339,7 @@ ul {
 }
 section {
   @include mw;
-  @include d-block-center;
+  display: block;
+  margin: auto;
   padding: 5vh 2vw;
 }

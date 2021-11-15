@@ -1,66 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spell elc</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="./scss/main.scss">
-</head>
-<body>
-    <include src='./partials/header.html' locals='{
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="./scss/main.scss" />
+  </head>
+  <body>
+    <include
+      src="./partials/header.html"
+      locals='{
         "About": "active"
-      }'></include>
-    
-    <main style="background: #eee;">
+      }'
+    ></include>
 
-        <!-- INTRO -->
-        
-        <div class="intro" style="background: #fff;">
-            <div style="position: relative;">
-                <img class="intro-img" src="img/How 1.png"/>
-                <div style="height: 100px; overflow: hidden; position: absolute; width: 100%; bottom: 0;">
-                    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee0; transform:rotate(180deg);">
-                        <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #fff;"></path>
-                    </svg>
-                </div>
-            </div>
-            <div class="hero">
-                <span style="position: absolute;right: 0;"><img src="img/dot-grid 6.png"></span>
-                <h1 class="style1">How do We Teach?</h1>
-                <h2>
-                    “If you tell me, I will listen; if you show me, I will see; <br>
-        if you let me experience, I will learn.” (Lau Tzu)
-                <br><br></h2>
-                <h3>
+    <main style="background: #eee">
+      <!-- INTRO -->
 
-    Di SPELL ELC kami tidak menuntut siswa untuk menghafal bentuk-bentuk bahasa ( grammar, vocabulary, pronunciation) melainkan melibatkan mereka secara aktif dalam penggunaan bahasa Inggris (listening, speaking, reading, writing) untuk kegiatan berkomunikasi (description, narration, argumentation, persuasion).
-    <br><br>
-    Jadi pengajaran bahasa disini bukan untuk membuat mereka menjadi ahli bahasa (linguists) melainkan agar mereka bisa berkomunikasi secara jelas dan efektif dalam bahasa Inggris (communicators).
-                </h3>
-            </div>
-            
-        </div>
-        <div style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee;">
-              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #fff;"></path>
+      <div class="intro" style="background: #fff">
+        <div style="position: relative">
+          <img class="intro-img" src="img/How 1.jpg" />
+          <div style="height: 50px; overflow: hidden; position: absolute; width: 100%; bottom: 0">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background: #eee0; transform: rotate(180deg)">
+              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff"></path>
             </svg>
+          </div>
         </div>
-        <!-- CARDS -->
-        <section>
-            <div class="about-links">
-                <a href="who.html" class="bubble">
-                    <img src="./img/Bubble-Chat-Who2.png" alt="How Do We Teach?">
-                </a>
-                <a href="differ.html" class="bubble">
-                    <img src="./img/Bubble-Chat-Who4.png" alt="How Do We Differ?">
-                </a>
-            </div>
-    </section>
-
+        <div class="hero px-5">
+          <h1 class="style1 p-2" style="background: url('./img/Rectangle 95.svg') center no-repeat">How do We Teach?</h1>
+          <h2 class="fw-bold">
+            “If you tell me, I will listen; if you show me, I will see; <br />
+            if you let me experience, I will learn.” <br />
+            (Lau Tzu)
+            <br /><br />
+          </h2>
+          <h3 class="text-start">
+            Di SPELL ELC kami tidak menuntut siswa untuk menghafal bentuk-bentuk bahasa ( grammar, vocabulary, pronunciation) melainkan melibatkan mereka secara aktif dalam penggunaan bahasa Inggris (listening, speaking, reading, writing)
+            untuk kegiatan berkomunikasi (description, narration, argumentation, persuasion).
+            <br /><br />
+            Jadi pengajaran bahasa disini bukan untuk membuat mereka menjadi ahli bahasa (linguists) melainkan agar mereka bisa berkomunikasi secara jelas dan efektif dalam bahasa Inggris (communicators).
+          </h3>
+        </div>
+      </div>
+      <div style="height: 150px; overflow: hidden">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background: #eee">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff"></path>
+        </svg>
+      </div>
+      <!-- CARDS -->
+      <section>
+        <div class="about-links">
+          <a href="how.html" class="bubble">
+            <img src="./img/who-bubble.png" alt="How Do We Teach?" />
+          </a>
+          <h2 class="read-more fw-bold p-1 ms-4">Read More</h2>
+          <a href="differ.html" class="bubble">
+            <img src="./img/differ-bubble.png" alt="How Do We Differ?" />
+          </a>
+        </div>
+      </section>
     </main>
-    <include src='./partials/footer.html'></include>
+    <include src="./partials/footer.html"></include>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

@@ -3,7 +3,6 @@
 @use "../base/mixins" as *;
 
 .intro {
-  background: $info;
   .intro-img {
     max-height: 600px;
     object-fit: cover;
@@ -11,7 +10,8 @@
     object-position: 0 -200px;
   }
   .hero {
-    @include d-block-center;
+    display: block;
+    margin: auto;
     text-align: center;
     @include mw;
     padding: 6vh 0;
@@ -21,36 +21,26 @@
     letter-spacing: 2px;
     margin-bottom: 5vh;
   }
-
   h2 {
     line-height: 30px;
   }
 
   /* PROGRAMS SECTION */
-
-  .program-hero {
-    h1 {
-      line-height: 40px;
+  .description {
+    display: flex;
+    gap: 2.25rem;
+    h3 {
+      flex: 2;
+      line-height: 30px;
     }
-    .description {
+    .hero-img {
+      max-width: 220px;
       display: flex;
-      h3 {
-        flex: 3;
-      }
-      .hero-img {
-        display: flex;
-        justify-content: end;
-        flex: 1;
-      }
+      align-items: center;
+      flex: 1;
     }
-    .tabs {
-      margin-top: 8vh;
-    }
-    @include d-block-center;
-    @include mw;
-    padding: 6vh 0;
-    color: $light;
   }
+
   .program-links {
     display: flex;
     flex-direction: row;

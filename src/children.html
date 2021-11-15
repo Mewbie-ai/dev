@@ -1,123 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>spell elc</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="scss/main.scss">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
+    <link rel="stylesheet" href="scss/main.scss" />
   </head>
-<body>
-    <include src="partials/header.html" locals='{
+  <body>
+    <include
+      src="partials/header.html"
+      locals='{
       "Programs": "active"
-    }'></include>
-    
+    }'
+    ></include>
+
     <main>
-        <!-- INTRO -->
-        
-        <div class="intro">
-          <div style="position: relative;">
-            <img class="intro-img" src="img/differ 1.png" style="object-position: 0 -00px;"/>
-            <div style="height: 100px; overflow: hidden; position: absolute; width: 100%; bottom: 0;">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#eee0; transform:rotate(180deg);">
-                    <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #3e4095;"></path>
-                </svg>
-            </div>
+      <!-- INTRO -->
+
+      <div class="intro">
+        <div style="position: relative">
+          <img class="intro-img" src="img/ch-header.jpg" style="object-position: 0 -00px" />
+          <div style="height: 100px; overflow: hidden; position: absolute; width: 100%; bottom: 0">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background: #eee0; transform: rotate(180deg)">
+              <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff"></path>
+            </svg>
           </div>
-          <section style="background: #3e4095;" class="about-links">
+        </div>
+        <section>
+          <h1 class="style4 d-flex justify-content-center display-2 fw-bold pb-3">Our Programs</h1>
+          <div class="about-links justify-content-evenly" style="gap: unset">
             <a href="academic.html" class="bubble">
-              <img src="./img/Bubble-Chat-2ae.png" alt="Academic English Link">
+              <img src="./img/Academic English.png" alt="Academic English Link" />
             </a>
             <a href="business.html" class="bubble">
-              <img src="./img/Bubble-Chat-2be.png" alt="Business English Link">
+              <img src="./img/Business English.png" alt="Business English Link" />
             </a>
             <a href="children.html" class="bubble active">
-              <img src="./img/Bubble-Chat-2ce.png" alt="Children English Link">
+              <img src="./img/Children English.png" alt="Children English Link" />
             </a>
-          </section>
-        </div>
-        <div style="height: 150px; overflow: hidden;">
-          <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#fff;">
-            <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #3e4095;"></path>
-          </svg>
-      </div>
-      <div class="container-xl p-3">
-        <h1 class="style1 p-3">General Descriptions</h1>
-        <div class="description d-flex justify-content-between">
-          <h3 style="flex: 2; line-height: 30px;">
-            Children’s English (CE) adalah program bahasa Inggris umum (General English) khususnya untuk siswa TK, SD, & SMP. Program ini bertujuan untuk menumbuhkan minat mereka dalam belajar bahasa Inggris serta mengembangkan kemampuan mereka dalam Listening, Speaking, Reading, Writing, & Grammar.
-            <br><br>
-            Dengan kurikulum yang komprehensif, siswa nantinya diharapkan tidak hanya bisa mengatasi pelajaran bahasa Inggris mereka di sekolah, tetapi juga bisa berbicara dan menulis dengan benar, sehingga mereka bisa mengembangkan kehidupan pribadi dan sosial mereka dengan baik. 
-          </h3>
-          <div class="hero-img" style="flex: 1;">
-            <img class="mx-auto" src="img/children.png" alt="hero-img">
           </div>
-        </div>
+          <div class="p-3">
+            <h1 class="style1 d-inline-block p-3" style="background: url('./img/Rectangle 95.svg') center no-repeat">General Descriptions</h1>
+            <div class="description">
+              <h3>
+                Children’s English (CE) adalah program bahasa Inggris umum (General English) khususnya untuk siswa TK, SD, & SMP. Program ini bertujuan untuk menumbuhkan minat mereka dalam belajar bahasa Inggris serta mengembangkan
+                kemampuan mereka dalam Listening, Speaking, Reading, Writing, & Grammar.
+                <br /><br />
+                Dengan kurikulum yang komprehensif, siswa nantinya diharapkan tidak hanya bisa mengatasi pelajaran bahasa Inggris mereka di sekolah, tetapi juga bisa berbicara dan menulis dengan benar, sehingga mereka bisa mengembangkan
+                kehidupan pribadi dan sosial mereka dengan baik.
+              </h3>
+              <div class="hero-img">
+                <img src="img/ch-desc.jpg" alt="hero-img" />
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div style="height: 150px; overflow: hidden;">
-        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background:#fff; transform:rotate(180deg);">
-          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none;fill: #eee;"></path>
+      <div style="height: 150px; overflow: hidden">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%; background: #fff; transform: rotate(180deg)">
+          <path d="M0.00,92.27 C216.83,192.92 304.30,8.39 500.00,109.03 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #eee"></path>
         </svg>
-    </div>
-      <div style="background: #eee;">
-
-          <div class="container-xl">
-            <div class="program-hero">
-              <div class="tabs">
-                <h1 class="style1 p-3">Types of Children English</h1>
-                <h3 class="p-3">Bahasa Inggris untuk anak-anak (CE) ini terdiri dari 4 program, yaitu:</h3>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" style="border-top-left-radius: 2.5em;" id="ge-tab" data-bs-toggle="tab" data-bs-target="#ge" type="button" role="tab" aria-controls="ge" aria-selected="true">(GE)
-                    <br>  
-                    General English</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="cte-tab" data-bs-toggle="tab" data-bs-target="#cte" type="button" role="tab" aria-controls="cte" aria-selected="false">(CTE)
-                      <br> Children’s & Teenager
-                      <br> Conversation
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="cef-tab" data-bs-toggle="tab" data-bs-target="#cef" type="button" role="tab" aria-controls="cef" aria-selected="false">(CEF)
-                      <br> Children’s English
-                      <br> for Fun
-                    </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" style="border-top-right-radius: 2.5em;" id="ilu-tab" data-bs-toggle="tab" data-bs-target="#ilu" type="button" role="tab" aria-controls="ilu" aria-selected="false">(ILU)
-                      <br> Independent
-                      <br> Learning Unit
-                    </button>
-                  </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                  <div class="tab-pane fade show active" id="ge" role="tabpanel" aria-labelledby="ge-tab">
-                    General English (GE) adalah program bahasa Inggris yang paling populer untuk siswa mulai usia TK – SMA. Karena diselenggarakan secara rutin 4 kali (term) setahun, maka program GE ini juga disebut Regular Program. Untuk ikut program yang banyak levelnya ini, calon murid harus ikut Placement Test online atau offline terlebih dahulu agar bisa masuk di kelas yang sesuai dengan kemampuan mereka.
-                    <br><br>
-                    Term atau periode kelas GE adalah sebagai berikut:
-                    <br> Term 1 : January – March          (pendaftaran dimulai bulan Desember)
-                    <br> Term 2 : April – June                  (pendaftaran dimulai bulan Maret)
-                    <br> Term 3 : July – September        (pendaftaran dimulai bulan Juni)
-                    <br> Term 4 : October – December   (pendaftaran dimulai bulan September) 
-                    <br> <img src="./img/DIAGRAM-TERMS.png" alt="">
-                  </div>
-                  <div class="tab-pane fade" id="cte" role="tabpanel" aria-labelledby="cte-tab">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
-                  <div class="tab-pane fade" id="cef" role="tabpanel" aria-labelledby="cef-tab">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
-                  <div class="tab-pane fade" id="ilu" role="tabpanel" aria-labelledby="ilu-tab">This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.This is some placeholder content the Home tab's associated content. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other .nav-powered navigation.</div>
+      </div>
+      <div style="background: #eee">
+        <div class="container-xl">
+          <div class="program-hero">
+            <div class="tabs max px-3">
+              <h1 class="style1 d-inline-block p-3" style="background: url('./img/Rectangle94long.svg') center no-repeat">Types of Children English (CE)</h1>
+              <h3 class="py-3 fw-bold">Bahasa Inggris untuk anak-anak (CE) ini terdiri dari 4 program, yaitu:</h3>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" style="border-top-left-radius: 2.5em" id="ge-tab" data-bs-toggle="tab" data-bs-target="#ge" type="button" role="tab" aria-controls="ge" aria-selected="true">
+                    (GE)
+                    <br />
+                    General English
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cte-tab" data-bs-toggle="tab" data-bs-target="#cte" type="button" role="tab" aria-controls="cte" aria-selected="false">
+                    (CTC) <br />
+                    Children’s & Teenager <br />
+                    Conversation
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="cef-tab" data-bs-toggle="tab" data-bs-target="#cef" type="button" role="tab" aria-controls="cef" aria-selected="false">
+                    (CEF) <br />
+                    Children’s English <br />
+                    for Fun
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" style="border-top-right-radius: 2.5em" id="ilu-tab" data-bs-toggle="tab" data-bs-target="#ilu" type="button" role="tab" aria-controls="ilu" aria-selected="false">
+                    (ILU) <br />
+                    Independent <br />
+                    Learning Unit
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="ge" role="tabpanel" aria-labelledby="ge-tab">
+                  General English (GE) adalah program bahasa Inggris yang paling populer untuk siswa mulai usia TK – SMA. Karena diselenggarakan secara rutin 4 kali (term) setahun, maka program GE ini juga disebut Regular Program. Untuk
+                  ikut program yang banyak levelnya ini, calon murid harus ikut Placement Test online atau offline terlebih dahulu agar bisa masuk di kelas yang sesuai dengan kemampuan mereka.
+                  <br /><br />
+                  Term atau periode kelas GE adalah sebagai berikut:
+                  <br />
+                  Term 1 : January – March (pendaftaran dimulai bulan Desember) <br />
+                  Term 2 : April – June (pendaftaran dimulai bulan Maret) <br />
+                  Term 3 : July – September (pendaftaran dimulai bulan Juni) <br />
+                  Term 4 : October – December (pendaftaran dimulai bulan September) <br />
+                  <img src="./img/DIAGRAM-TERMS.png" alt="" />
+                </div>
+                <div class="tab-pane fade" id="cte" role="tabpanel" aria-labelledby="cte-tab">
+                  CTC adalah program untuk siswa SD (kelas 4, 5, 6) dan SMP yang ditujukan untuk menumbuh-kembangkan keberanian (confidence) siswa dalam speaking. Di kelas ini, guru menekankan Fluency building dengan memberi banyak
+                  kesempatan pada siswa untuk Listening (language input) & Speaking (language output).
+                </div>
+                <div class="tab-pane fade" id="cef" role="tabpanel" aria-labelledby="cef-tab">
+                  CEF adalah Holiday English Program untuk siswa TK (A & B), SD (kelas 1, 2, 3), dan SD (4, 5, 6) yang diselenggarakan 3 x seminggu @ 1.5 jam selama 2 minggu (6 kali pertemuan) selama liburan sekolah, biasanya di bulan Juni.
+                  Selain untuk memberi siswa kegiatan yang bermanfaat selama liburan panjang, program ini juga bertujuan untuk menjaga tingkat kemampuan bahasa Inggris siswa yang telah dicapai selama ini. Karena tujuan program ini untuk
+                  penyegaran, siswa di kelas akan banyak melakukan kegiatan berkomunikasi, khususnya listening & speaking, yang menarik dalam bahasa Inggris sambil bermain.
+                </div>
+                <div class="tab-pane fade" id="ilu" role="tabpanel" aria-labelledby="ilu-tab">
+                  Independent Learning Unit (ILU) adalah program bahasa Inggris bagi murid TK, SD, SMP, dan SMA yang ingin mempercepat dan memantapkan penguasaan bahasa Inggris mereka dalam aspek tertentu: Grammar, Vocabulary, Spelling,
+                  Pronunciation, Listening, Reading, Speaking, atau Writing. Di dalam program yang terdiri dari 5 tahapan ini (Introduction, Growth, Development, Consolidation, & Independence), seorang coach membimbing sekelompok kecil
+                  siswa (semi-private) untuk mengerti dan mampu mengerjakan materi khusus dari SPELL. (module-based) agar mereka menjadi pembelajar mandiri (independent learner). Karena sifatnya yang menekankan kemandirian ini, maka siswa
+                  yang termotivasi bisa menyelesaikan program ILU kami dengan lebih cepat.
                 </div>
               </div>
+            </div>
           </div>
         </div>
-        <section class="video" style="padding: 4vw;">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
-                </iframe>
-            </div>
+        <section class="video">
+          <h1 class="style4 display-2">Student Activities / Accomplishments</h1>
+          <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" allow="fullscreen;"> </iframe>
+          </div>
         </section>
         <section class="slider">
-          <div class="container border-shadow" style="border-radius: 2em;">
+          <div class="container border-shadow" style="border-radius: 2em">
             <div id="testimony" class="carousel slide" data-bs-ride="carousel">
               <h3 class="title style1 text-center">Testimonials</h3>
               <div class="carousel-indicators">
@@ -126,22 +147,25 @@
                 <button type="button" data-bs-target="#testimony" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
               <div class="carousel-inner">
-                <div class="carousel-item active" style="min-height: 300px;">
-                  <img src="./img/Mask Group.jpg" class="slider-img d-block mx-auto" alt="load failed">
+                <div class="carousel-item active" style="min-height: 300px">
+                  <img src="./img/Mask Group.jpg" class="slider-img d-block mx-auto" alt="load failed" />
                   <div class="caption text-center d-md-block text-dark">
                     <h3 class="fw-bold">Mama Clarissa- Regular Program (2018-present)</h3>
-                    <p>Semenjak anak-anak les di SPELL dari 3 tahun lalu, kosakata Englishnya semakin bertambah, dan anak-anak berani untuk bicara bahasa Inggris baik di rumah maupun di kelas karena didukung oleh guru-guru yang ramah dan pintar mengambil hati anak-anak untuk mau berbicara. Guru-gurunya pun mempunyai metode yang menarik sehingga anak-anak tidak bosan.</p>
+                    <p>
+                      Semenjak anak-anak les di SPELL dari 3 tahun lalu, kosakata Englishnya semakin bertambah, dan anak-anak berani untuk bicara bahasa Inggris baik di rumah maupun di kelas karena didukung oleh guru-guru yang ramah dan
+                      pintar mengambil hati anak-anak untuk mau berbicara. Guru-gurunya pun mempunyai metode yang menarik sehingga anak-anak tidak bosan.
+                    </p>
                   </div>
                 </div>
-                <div class="carousel-item" style="min-height: 300px;">
-                  <img src="./img/child.png" class="slider-img d-block mx-auto" alt="load failed">
+                <div class="carousel-item" style="min-height: 300px">
+                  <img src="./img/child.png" class="slider-img d-block mx-auto" alt="load failed" />
                   <div class="caption text-center d-md-block text-dark">
                     <h3 class="fw-bold">Joshua</h3>
                     <p>“Belajar bahasa inggris di SPELL ELC memberikan pengalaman yang sangat terbaik.”</p>
                   </div>
                 </div>
-                <div class="carousel-item" style="min-height: 300px;">
-                  <img src="./img/child.png" class="slider-img d-block mx-auto" alt="load failed">
+                <div class="carousel-item" style="min-height: 300px">
+                  <img src="./img/child.png" class="slider-img d-block mx-auto" alt="load failed" />
                   <div class="caption text-center d-md-block text-dark">
                     <h3 class="fw-bold">Joshua</h3>
                     <p>“Belajar bahasa inggris di SPELL ELC memberikan pengalaman yang sangat terbaik.”</p>
@@ -160,10 +184,9 @@
           </div>
         </section>
       </div>
-
     </main>
 
-    <include src='./partials/footer.html'></include>
+    <include src="./partials/footer.html"></include>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

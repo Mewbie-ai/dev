@@ -21,6 +21,11 @@ footer {
       display: flex;
       width: 100%;
       justify-content: space-between;
+
+      ul h3 {
+        font-weight: 600;
+        text-shadow: 2px 2px 2px #111a;
+      }
     }
   }
 
@@ -29,18 +34,15 @@ footer {
     flex-direction: row;
     padding: 0;
 
-    li {
-      img:hover {
-        transform: rotate(15deg);
-        transition: 250ms;
-      }
+    li img:hover {
+      transform: rotate(15deg);
+      transition: 250ms;
     }
   }
-  ul {
-    li {
-      position: relative;
-    }
+  ul li {
+    position: relative;
   }
+
   h3 {
     margin: 4vh 0 2vh 0;
   }
@@ -63,4 +65,20 @@ footer {
       text-align: center;
     }
   }
+}
+
+// Header
+.header {
+  z-index: 1;
+  button {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    &:hover {
+      background: $info-300;
+    }
+  }
+}
+.navbar-nav .nav-link {
+  @include underline-animation($info, 250ms, left center);
 }

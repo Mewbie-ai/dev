@@ -1,26 +1,23 @@
-@mixin d-flex-center {
-  display: flex;
-  align-items: center;
-}
-@mixin d-block-center {
-  display: block;
-  margin: auto;
-}
 @mixin underline-animation($color, $time, $origin) {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   span {
     opacity: 0;
     position: absolute;
     height: 2px;
     width: 100%;
-    bottom: -3px;
+    bottom: 6px;
     background: $color;
     transform: scaleX(0);
     transform-origin: $origin;
     transition: all $time ease-in-out;
+    box-shadow: -1px 3px 3px #1115;
   }
   &:hover {
     span {
-      opacity: 0.9;
+      opacity: 1;
       transform: scaleX(1);
     }
   }
@@ -55,17 +52,5 @@
       position: relative;
       list-style-type: none;
     }
-  }
-}
-$mqIterations: 19;
-@mixin fontResize($iterations) {
-  $i: 1;
-  @while $i <= $iterations {
-    @media all and (min-width: 100px * $i) {
-      body {
-        font-size: 0.2em * $i;
-      }
-    }
-    $i: $i + 1;
   }
 }
