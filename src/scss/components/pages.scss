@@ -1,12 +1,56 @@
-@use "../base/colors" as *;
-@use "../base/widths" as *;
-@use "../base/mixins" as *;
+@import "../base/colors";
+@import "../base/widths";
+@import "../base/mixins";
 
 .border-shadow {
   border: 2px solid $info;
   border-radius: 5em;
   box-shadow: -7px 7px $info, 7px -7px #ffcc29;
   background: white;
+}
+
+/* HOME */
+
+.side-image {
+  border-radius: 2em;
+  overflow: hidden;
+  padding: 0;
+}
+
+.video-container {
+  iframe {
+    padding: 0 8vw;
+    background: black;
+  }
+}
+
+.bullet-list {
+  list-style-type: disc;
+  line-height: 30px;
+}
+
+/* All pages */
+
+.myTab {
+  li {
+    &:first button {
+      border-top-left-radius: 2.5em;
+    }
+    &:last-child button {
+      border-top-right-radius: 2.5em;
+    }
+  }
+}
+
+.testimonial {
+  .container {
+    border-radius: 2em;
+  }
+  .carousel-inner {
+    .carousel-item {
+      min-height: 300px;
+    }
+  }
 }
 
 /* CARDS */
@@ -113,6 +157,24 @@
   }
 }
 
+/* WHO */
+.hero-img {
+  max-width: 420px;
+}
+.fake {
+  max-width: 370px;
+  width: 100%;
+}
+
+/* TEST */
+.dotgrid {
+  position:absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  max-height: 340px;
+}
+
 /* ENTIRE PROGRAMS SECTION */
 .program-hero h3 {
   font-weight: 700;
@@ -135,9 +197,24 @@
 /* CONTACT PAGE */
 .map {
   background: $light-500;
+  border-radius: 3em;
+  overflow: hidden;
 }
 .form {
   h2 {
     color: $light;
+  }
+}
+.message-us {
+  border-radius: 10px;
+}
+.contact-form {
+  textarea {
+    min-height: 100px !important;
+  }
+  .submit-button {
+    border: 1px solid #3e4095;
+    border-radius: 10px;
+    box-shadow: 2px 2px #3e4095;
   }
 }

@@ -1,15 +1,29 @@
-@use "components/footer" as *;
-@use "components/intro" as *;
-@use "components/pages" as *;
-@use "base/video" as *;
-@use "base/mixins" as *;
-@use "base/typography" as *;
-@use "base/widths" as *;
-@use "base/colors" as *;
+@import "base/colors";
+@import "base/widths";
+@import "base/typography";
+@import "base/mixins";
+@import "base/video";
+@import "components/pages";
+@import "components/intro";
+@import "components/footer";
 
-/* BOOTSTRAP STUFF & MEDIA QUERIES */
+/* BOOTSTRAP STUFF */
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+section {
+  @include mw;
+  display: block;
+  margin: auto;
+  padding: 5vh 2vw;
+}
+
 nav {
   box-shadow: 5px 5px 5px #1115;
   .nav-item {
@@ -33,7 +47,7 @@ nav {
 }
 .dropdown-item:hover {
   color: $secondary;
-  background: url("~img/Rectangle 92.svg") no-repeat center/ 100% auto;
+  background: url("~img/Rectangle92.svg") no-repeat center/ 100% auto;
 }
 .max {
   .nav-tabs .nav-item {
@@ -136,19 +150,69 @@ nav {
       overflow-y: auto;
     }
   }
-  #first-slider .carousel-item {
-    img {
-      min-width: 600px;
-      max-height: 600px;
+  #first-slider {
+    max-height: 600px;
+    .carousel-indicators {
+      bottom: 25%;
     }
-    .carousel-caption {
-      right: 0;
-      left: 0;
-      width: 100%;
-      background: #111a;
-      height: 90px;
-      padding: 0.75rem 0;
+    .carousel-item {
+      img {
+        min-width: 600px;
+        max-height: 600px;
+      }
+      .carousel-caption {
+        right: 0;
+        left: 0;
+        width: 100%;
+        background: #111a;
+        height: 90px;
+        padding: 0.75rem 0;
+      }
     }
+  }
+}
+
+.wave {
+  height: 50px;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+
+  svg {
+    height: 100%;
+    width: 100%;
+    background: #eee0;
+    transform: rotate(180deg);
+
+    path {
+      stroke: none;
+      fill: #fff;
+    }
+  }
+
+  &.tall {
+    height: 100px;
+  }
+}
+
+.wave-2 {
+  height: 100px;
+  overflow: hidden;
+
+  svg {
+    height: 100%;
+    width: 100%;
+    background: #eee;
+
+    path {
+      stroke: none;
+      fill: #eee;
+    }
+  }
+
+  &.tall {
+    height: 150px;
   }
 }
 
@@ -208,6 +272,11 @@ nav {
     background: #1116;
     height: 175px;
   }
+  .next-button {
+    border: 1px solid black;
+    box-shadow: 1px 1px black;
+    border-radius: 8px;
+  }
 }
 .accordion {
   color: $primary;
@@ -247,6 +316,69 @@ nav {
 .accordion .accordion-item:nth-child(5) .accordion-button {
   background: $info-500;
 }
+
+.flex-1 {
+  flex: 1 !important;
+}
+
+.bg-light-grey {
+  background-color: #eee !important;
+}
+
+.circle {
+  border-radius: 50% !important;
+}
+
+.gap-unset {
+  gap: unset !important;
+}
+
+.p-b-100 {
+  padding-bottom: 100px !important;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fill-white {
+  fill: #fff !important;
+}
+
+.fill-grey {
+  fill: #eee !important;
+}
+
+.fill-blue {
+  fill: #28146f !important;
+}
+
+.rect-92 {
+  background: url('../img/Rectangle92.svg') center no-repeat;
+}
+
+.rect-93 {
+  background: url('../img/Rectangle93.svg') center no-repeat;
+}
+
+.rect-94 {
+  background: url('../img/Rectangle94.svg') no-repeat center;
+}
+
+.rect-94-long {
+  background: url('../img/Rectangle94long.svg') center no-repeat;
+}
+
+.rect-95 {
+  background: url('../img/Rectangle95.svg') center no-repeat;
+}
+
+.rect-96 {
+  background: url('../img/Rectangle96.svg') no-repeat center/ 100% auto;
+}
+
+/* MEDIA QUERIES */
+
 @include media-breakpoint-down(xl) {
   .intro .intro-img {
     object-position: 0 0;
@@ -329,17 +461,4 @@ nav {
     flex-direction: column;
     min-height: 75vh;
   }
-}
-
-a {
-  text-decoration: none;
-}
-ul {
-  list-style-type: none;
-}
-section {
-  @include mw;
-  display: block;
-  margin: auto;
-  padding: 5vh 2vw;
 }

@@ -1,6 +1,6 @@
-@use "../base/colors" as *;
-@use "../base/widths" as *;
-@use "../base/mixins" as *;
+@import "../base/colors";
+@import "../base/widths";
+@import "../base/mixins";
 
 .intro {
   .intro-img {
