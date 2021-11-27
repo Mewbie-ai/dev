@@ -1,5 +1,5 @@
-@use "../base/colors" as *;
-@use "../base/mixins" as *;
+@import "../base/colors";
+@import "../base/mixins";
 
 footer {
   display: flex;

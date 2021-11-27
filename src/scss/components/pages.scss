@@ -1,12 +1,60 @@
-@use "../base/colors" as *;
-@use "../base/widths" as *;
-@use "../base/mixins" as *;
+@import "../base/colors";
+@import "../base/widths";
+@import "../base/mixins";
 
 .border-shadow {
   border: 2px solid $info;
   border-radius: 5em;
   box-shadow: -7px 7px $info, 7px -7px #ffcc29;
   background: white;
+}
+
+.registerBtn {
+  box-shadow: 0px 3px 5px rgba(0,0,0,.5);
+}
+
+/* HOME */
+
+.side-image {
+  border-radius: 2em;
+  overflow: hidden;
+  padding: 0;
+}
+
+.video-container {
+  iframe {
+    padding: 0 8vw;
+    background: black;
+  }
+}
+
+.bullet-list {
+  list-style-type: disc;
+  line-height: 30px;
+}
+
+/* All pages */
+
+.myTab {
+  li {
+    &:first button {
+      border-top-left-radius: 2.5em;
+    }
+    &:last-child button {
+      border-top-right-radius: 2.5em;
+    }
+  }
+}
+
+.testimonial {
+  .container {
+    border-radius: 2em;
+  }
+  .carousel-inner {
+    .carousel-item {
+      min-height: 300px;
+    }
+  }
 }
 
 /* CARDS */
@@ -18,14 +66,26 @@
   align-items: center;
   gap: 4em;
   position: relative;
+
   .bubble {
     z-index: 1;
     padding: 0 10px;
     max-width: 261px;
     filter: grayscale(100%);
-    &:hover {
+
+    img {
+      transition: all 200ms ease;
+    }
+
+    &:hover,
+    &.active {
       filter: none;
       transition: all 200ms ease;
+
+      img {
+        transform: scale(1.1);
+        transform: -webkit-scale(1.1);
+      }
     }
   }
   .read-more {
@@ -103,7 +163,7 @@
     text-align: center;
   }
   h1 {
-    background: url("~img/Polygon 2.svg") no-repeat 25% 75%/100% auto;
+    background: url("~img/polygon-2.svg") no-repeat 25% 75%/100% auto;
     color: $info;
     font-size: 4rem;
     font-weight: 700;
@@ -111,6 +171,24 @@
   h3 {
     padding: 14px 7px;
   }
+}
+
+/* WHO */
+.hero-img {
+  max-width: 420px;
+}
+.fake {
+  max-width: 370px;
+  width: 100%;
+}
+
+/* TEST */
+.dotgrid {
+  position:absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  max-height: 340px;
 }
 
 /* ENTIRE PROGRAMS SECTION */
@@ -135,9 +213,24 @@
 /* CONTACT PAGE */
 .map {
   background: $light-500;
+  border-radius: 3em;
+  overflow: hidden;
 }
 .form {
   h2 {
     color: $light;
+  }
+}
+.message-us {
+  border-radius: 10px;
+}
+.contact-form {
+  textarea {
+    min-height: 100px !important;
+  }
+  .submit-button {
+    border: 1px solid #3e4095;
+    border-radius: 10px;
+    box-shadow: 2px 2px #3e4095;
   }
 }
