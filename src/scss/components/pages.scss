@@ -9,6 +9,10 @@
   background: white;
 }
 
+.registerBtn {
+  box-shadow: 0px 3px 5px rgba(0,0,0,.5);
+}
+
 /* HOME */
 
 .side-image {
@@ -62,14 +66,26 @@
   align-items: center;
   gap: 4em;
   position: relative;
+
   .bubble {
     z-index: 1;
     padding: 0 10px;
     max-width: 261px;
     filter: grayscale(100%);
-    &:hover {
+
+    img {
+      transition: all 200ms ease;
+    }
+
+    &:hover,
+    &.active {
       filter: none;
       transition: all 200ms ease;
+
+      img {
+        transform: scale(1.1);
+        transform: -webkit-scale(1.1);
+      }
     }
   }
   .read-more {
