@@ -122,7 +122,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"E:\\Mich\\Study\\works\\dev\\dev\\src\\img\\Polygon 2.svg":[["Polygon 2.ea852456.svg","img/Polygon 2.svg"],"img/Polygon 2.svg"],"E:\\Mich\\Study\\works\\dev\\dev\\src\\img\\Rectangle 92.svg":[["Rectangle 92.4196da7c.svg","img/Rectangle 92.svg"],"img/Rectangle 92.svg"],"./..\\img\\prev.png":[["prev.4293a485.png","img/prev.png"],"img/prev.png"],"./..\\img\\next.png":[["next.4bfc7590.png","img/next.png"],"img/next.png"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"/Applications/MAMP/htdocs/spell-elc-mich/src/img/polygon-2.svg":[["polygon-2.8e1a653a.svg","img/polygon-2.svg"],"img/polygon-2.svg"],"/Applications/MAMP/htdocs/spell-elc-mich/src/img/Rectangle92.svg":[["Rectangle92.7240079a.svg","img/Rectangle92.svg"],"img/Rectangle92.svg"],"./../img/prev.png":[["prev.4293a485.png","img/prev.png"],"img/prev.png"],"./../img/next.png":[["next.4bfc7590.png","img/next.png"],"img/next.png"],"./../img/Rectangle92.svg":[["Rectangle92.7240079a.svg","img/Rectangle92.svg"],"img/Rectangle92.svg"],"./../img/Rectangle93.svg":[["Rectangle93.f1dc3904.svg","img/Rectangle93.svg"],"img/Rectangle93.svg"],"./../img/Rectangle94.svg":[["Rectangle94.4e24a6ea.svg","img/Rectangle94.svg"],"img/Rectangle94.svg"],"./../img/Rectangle94long.svg":[["Rectangle94long.4c5955fc.svg","img/Rectangle94long.svg"],"img/Rectangle94long.svg"],"./../img/Rectangle95.svg":[["Rectangle95.c152c3fb.svg","img/Rectangle95.svg"],"img/Rectangle95.svg"],"./../img/Rectangle96.svg":[["Rectangle96.ce00340f.svg","img/Rectangle96.svg"],"img/Rectangle96.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -150,7 +150,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55519" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51925" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
