@@ -37,17 +37,22 @@ nav {
     }
   }
 }
-.dropdown-menu[data-bs-popper] {
-  margin-top: 1.125rem;
-}
 .dropdown-menu {
   border: none;
   border-radius: 12px;
   box-shadow: 3px 3px 0 $info-200;
+  li {
+    padding: 0 10px;
+  }
+  &[data-bs-popper] {
+    margin-top: 1.125rem;
+  }
 }
-.dropdown-item:hover {
-  color: $secondary;
-  background: url("~img/Rectangle92.svg") no-repeat center/ 100% auto;
+.dropdown-item {
+  &:hover {
+    color: $secondary;
+    background: url("~img/Rectangle92.svg") no-repeat center/ 100% auto;
+  }
 }
 .max {
   .nav-tabs .nav-item {
@@ -151,14 +156,16 @@ nav {
     }
   }
   #first-slider {
-    max-height: 600px;
+    .carousel-item {
+      max-height: 600px;
+    }
     .carousel-indicators {
       bottom: 25%;
     }
     .carousel-item {
       img {
         min-width: 600px;
-        max-height: 600px;
+        height: 100%;
       }
       .carousel-caption {
         right: 0;
@@ -167,6 +174,7 @@ nav {
         background: #111a;
         height: 90px;
         padding: 0.75rem 0;
+        font-size: 1.1em;
       }
     }
   }
@@ -287,8 +295,8 @@ nav {
     list-style-type: disc;
   }
   .accordion-button:not(.collapsed) {
-    color: #202250;
-    background-color: #fff;
+    // color: #202250;
+    // background-color: #fff;
     box-shadow: none;
   }
   .accordion-button {
@@ -303,6 +311,12 @@ nav {
   .accordion-body {
     padding: 1rem 2.25rem;
   }
+  .accordion-button:after {
+    display: none;
+  }
+}
+.accordion .accordion-item:nth-child(1) .accordion-button {
+  background: $info;
 }
 .accordion .accordion-item:nth-child(2) .accordion-button {
   background: $info;
@@ -376,6 +390,19 @@ nav {
 .rect-96 {
   background: url('../img/Rectangle96.svg') no-repeat center/ 100% auto;
 }
+.line-height-1 {
+  line-height: 1;
+}
+.line-height-2 {
+  line-height: 1.8;
+}
+.text-justify {
+  text-align: justify !important;
+}
+.max-620 {
+  display: inline-block;
+  max-width: 620px !important;
+}
 
 /* MEDIA QUERIES */
 
@@ -391,6 +418,10 @@ nav {
     margin-left: 0.5rem;
     padding-right: 0;
     padding-left: 0;
+  }
+  .min-750 {
+    display: inline-block;
+    min-width: 750px !important;
   }
 }
 @include media-breakpoint-down(lg) {
@@ -438,6 +469,12 @@ nav {
   .uverti .content {
     display: block;
   }
+  .style2 {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 160px;
+    height: 100px;
+  }
 }
 @include media-breakpoint-down(sm) {
   html {
@@ -460,5 +497,11 @@ nav {
   .home {
     flex-direction: column;
     min-height: 75vh;
+  }
+  .style2 {
+    font-size: 2rem;
+    padding: 1rem;
+    width: 120px;
+    height: 80px;
   }
 }
