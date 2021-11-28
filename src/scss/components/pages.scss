@@ -30,14 +30,19 @@
 
 .bullet-list {
   list-style-type: disc;
-  line-height: 30px;
+  line-height: 35px;
+  font-size: 1.1em;
+}
+
+.read-about-us {
+  border-bottom: 1px solid #28147C;
 }
 
 /* All pages */
 
 .myTab {
   li {
-    &:first button {
+    &:first-child button {
       border-top-left-radius: 2.5em;
     }
     &:last-child button {
@@ -154,22 +159,24 @@
 .uverti {
   .content {
     display: grid;
-    div {
-      padding: 2vw;
-    }
   }
   span {
     min-width: 40px;
     text-align: center;
   }
-  h1 {
-    background: url("~img/polygon-2.svg") no-repeat 25% 75%/100% auto;
+  .h1 {
+    background: url("~img/polygon-2.svg") no-repeat;
+    background-size: 100%;
+    background-position: 0 30px;
     color: $info;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
+    min-width: 50px;
   }
-  h3 {
-    padding: 14px 7px;
+  .h3 {
+    padding-top: 12px;
+    font-size: 1.5em;
+    display: inline-block;
   }
 }
 
@@ -213,7 +220,7 @@
 /* CONTACT PAGE */
 .map {
   background: $light-500;
-  border-radius: 3em;
+  border-radius: 4em;
   overflow: hidden;
 }
 .form {
