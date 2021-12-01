@@ -425,23 +425,6 @@ nav {
   }
 }
 @include media-breakpoint-down(lg) {
-  .staff-and-lecturers {
-    ul {
-      display: block;
-      li:nth-child(2n + 1) {
-        flex-direction: row-reverse;
-        .text-end {
-          text-align: left !important;
-        }
-      }
-    }
-    .head {
-      justify-content: start !important;
-    }
-    .fake {
-      display: none;
-    }
-  }
   footer {
     nav .footer-nav {
       display: grid;
@@ -503,5 +486,10 @@ nav {
     padding: 1rem;
     width: 120px;
     height: 80px;
+  }
+  .staff-and-lecturers {
+    .fake {
+      display: none;
+    }
   }
 }
