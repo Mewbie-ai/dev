@@ -47,93 +47,93 @@ em {
 
 @font-face {
   font-family: "Candara";
-  src: url("/CANDARAB.fb2fd779.ttf");
+  src: url("/CANDARAB.5b55e1ca.TTF");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Candara";
-  src: url("/CANDARAZ.8d654a92.ttf");
+  src: url("/CANDARAZ.f36cdaf1.TTF");
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: "Candara";
-  src: url("/CANDARA.da508a3f.ttf");
+  src: url("/CANDARA.9051b2c4.TTF");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Candara";
-  src: url("/CANDARAI.7882d621.ttf");
+  src: url("/CANDARAI.8436cc63.TTF");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Candara";
-  src: url("/CANDARAL.4f4d8521.ttf");
+  src: url("/CANDARAL.e0c76c53.TTF");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Candara";
-  src: url("/CANDARALI.791a357d.ttf");
+  src: url("/CANDARALI.77492f9a.TTF");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "Corbel";
-  src: url("/CORBELB.66eb9055.ttf");
+  src: url("/CORBELB.bb631187.TTF");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: "Corbel";
-  src: url("/CORBELZ.fb51dac7.ttf");
+  src: url("/CORBELZ.9be95d11.TTF");
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: "Corbel";
-  src: url("/CORBEL.5ce52ea5.ttf");
+  src: url("/CORBEL.d92ba762.TTF");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Corbel";
-  src: url("/CORBELI.895fb939.ttf");
+  src: url("/CORBELI.9a3df7db.TTF");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Corbel";
-  src: url("/CORBELL.581e3351.ttf");
+  src: url("/CORBELL.3ad75598.TTF");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Corbel";
-  src: url("/CORBELLI.1c9bbfbb.ttf");
+  src: url("/CORBELLI.9f77c344.TTF");
   font-weight: 300;
   font-style: italic;
 }
 @font-face {
   font-family: "Chunkfive";
-  src: url("/CHUNKFIVE-REGULAR.caa342a6.otf");
+  src: url("/CHUNKFIVE-REGULAR.a70b7f7e.OTF");
 }
 @font-face {
   font-family: "Tabarra-shadow";
-  src: url("/TABARRA-SHADOW-FFP.5b0f1ab4.otf");
+  src: url("/TABARRA-SHADOW-FFP.2772ff7e.OTF");
   font-style: normal;
 }
 @font-face {
   font-family: "Tabarra-shadow";
-  src: url("/TABARRA-SHADOW-ITALIC-FFP.522e4274.otf");
+  src: url("/TABARRA-SHADOW-ITALIC-FFP.7d35f530.OTF");
   font-style: italic;
 }
 @font-face {
   font-family: "TT0524M";
-  src: url("/TT0524M_.32557202.ttf");
+  src: url("/TT0524M_.fce1622c.TTF");
 }
 .video-container {
   position: relative;
@@ -321,17 +321,6 @@ img {
 .staff-and-lecturers img {
   min-width: 110px;
 }
-.staff-and-lecturers ul {
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.staff-and-lecturers ul li {
-  display: flex;
-}
-.staff-and-lecturers ul li h3, .staff-and-lecturers ul li .h3 {
-  flex-grow: 1;
-}
 
 .tes-simulasi a div:hover {
   transition: 250ms;
@@ -369,7 +358,7 @@ img {
 }
 
 .fake {
-  max-width: 370px;
+  max-width: calc(50% - 50px);
   width: 100%;
 }
 
@@ -12221,22 +12210,6 @@ nav .nav-item .active span {
   }
 }
 @media (max-width: 991.98px) {
-  .staff-and-lecturers ul {
-    display: block;
-  }
-  .staff-and-lecturers ul li:nth-child(2n+1) {
-    flex-direction: row-reverse;
-  }
-  .staff-and-lecturers ul li:nth-child(2n+1) .text-end {
-    text-align: left !important;
-  }
-  .staff-and-lecturers .head {
-    justify-content: start !important;
-  }
-  .staff-and-lecturers .fake {
-    display: none;
-  }
-
   footer nav .footer-nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -12305,6 +12278,10 @@ nav .nav-item .active span {
     padding: 1rem;
     width: 120px;
     height: 80px;
+  }
+
+  .staff-and-lecturers .fake {
+    display: none;
   }
 }
 

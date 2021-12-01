@@ -135,17 +135,6 @@
   img {
     min-width: 110px;
   }
-  ul {
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    li {
-      display: flex;
-      h3 {
-        flex-grow: 1;
-      }
-    }
-  }
 }
 .tes-simulasi a div:hover {
   transition: 250ms;
@@ -185,7 +174,7 @@
   max-width: 420px;
 }
 .fake {
-  max-width: 370px;
+  max-width: calc(50% - 50px);
   width: 100%;
 }
 
