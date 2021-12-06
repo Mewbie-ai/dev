@@ -17,7 +17,7 @@ a {
 ul {
   list-style-type: none;
 }
-section {
+.section {
   @include mw;
   display: block;
   margin: auto;
@@ -337,6 +337,10 @@ nav {
 
 .bg-light-grey {
   background-color: #eee !important;
+}
+
+.bg-dark-2 {
+  background-color: $dark-2 !important;
 }
 
 .circle {

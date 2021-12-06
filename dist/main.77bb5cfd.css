@@ -338,7 +338,7 @@ img {
   text-align: center;
 }
 .uverti .h1 {
-  background: url("/polygon-2.8e1a653a.svg") no-repeat;
+  background: url("/polygon-2.392a9b14.svg") no-repeat;
   background-size: 100%;
   background-position: 0 30px;
   color: #28146f;
@@ -11793,7 +11793,7 @@ ul {
   list-style-type: none;
 }
 
-section {
+.section {
   max-width: 1200px;
   display: block;
   margin: auto;
@@ -12119,6 +12119,10 @@ nav .nav-item .active span {
 
 .bg-light-grey {
   background-color: #eee !important;
+}
+
+.bg-dark-2 {
+  background-color: #444 !important;
 }
 
 .circle {
