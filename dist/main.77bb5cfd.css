@@ -12064,6 +12064,10 @@ nav .nav-item .active span {
   box-shadow: 1px 1px black;
   border-radius: 8px;
 }
+.gallery .w-100 {
+  object-fit: scale-down;
+  height: 500px;
+}
 
 .accordion {
   color: #242659;

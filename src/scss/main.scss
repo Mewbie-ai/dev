@@ -285,6 +285,10 @@ nav {
     box-shadow: 1px 1px black;
     border-radius: 8px;
   }
+   .w-100{
+    object-fit: scale-down;
+    height: 500px;
+  }
 }
 .accordion {
   color: $primary;
