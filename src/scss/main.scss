@@ -23,7 +23,11 @@ ul {
   margin: auto;
   padding: 5vh 2vw;
 }
-
+.btn-close{
+  background: transparent url("~img/register/X.svg") center/2em auto no-repeat;
+  color: unset;
+  opacity: 1;
+}
 nav {
   box-shadow: 5px 5px 5px #1115;
   .nav-item {

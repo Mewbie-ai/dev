@@ -688,6 +688,35 @@ footer .copyright {
   transform: scaleX(1);
 }
 
+.register-modal {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0;
+}
+.register-modal .modal-btn {
+  border-radius: 50px;
+  max-width: 330px;
+  height: 100px;
+  background: #FFDE76;
+  box-shadow: 0 5px 3px #1115;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+}
+.register-modal img {
+  border-radius: 50px;
+  height: 100px;
+  width: 120px;
+}
+.register-modal h1, .register-modal .h1 {
+  font-weight: 700;
+  padding: 12px;
+  text-shadow: 0px 3px 3px #1115;
+}
+
 /* BOOTSTRAP STUFF */
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
@@ -11798,6 +11827,12 @@ ul {
   display: block;
   margin: auto;
   padding: 5vh 2vw;
+}
+
+.btn-close {
+  background: transparent url("/X.0189beec.svg") center/2em auto no-repeat;
+  color: unset;
+  opacity: 1;
 }
 
 nav {

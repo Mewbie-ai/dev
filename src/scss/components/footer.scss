@@ -53,8 +53,6 @@ footer {
     }
   }
 
-  .footer-title {
-  }
   small {
     margin: 0.1px;
     line-height: 0;
@@ -83,4 +81,32 @@ footer {
 }
 .navbar-nav .nav-link {
   @include underline-animation($info, 250ms, left center);
+}
+.register-modal{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 0;
+  .modal-btn{
+    border-radius: 50px; 
+    max-width: 330px; 
+    height: 100px;
+    background: #FFDE76; 
+    box-shadow: 0 5px 3px #1115; 
+    overflow: hidden; 
+    align-items: center; 
+    display: flex;
+  }
+  img{
+    border-radius: 50px;
+    height: 100px;
+    width: 120px;
+  }
+  h1{
+    font-weight: 700;
+    padding: 12px;
+    text-shadow: 0px 3px 3px #1115;
+  }
 }
