@@ -229,6 +229,15 @@ nav {
 }
 
 .gallery {
+  h2 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    font-size: 24px;
+    margin-bottom: 1rem;
+    justify-content: left;
+    text-align: left;
+  }
   gap: 20px;
   .nav {
     flex: 1;
@@ -255,6 +264,7 @@ nav {
     overflow: hidden;
     .carousel-indicators {
       margin: 0 !important;
+      position: relative;
     }
     .carousel-control-prev-icon {
       background-image: url("../img/prev.png");
@@ -274,6 +284,7 @@ nav {
       height: auto;
       padding: 0;
       border-radius: unset;
+      max-height: 100px;
     }
   }
   .carousel-caption {
@@ -281,17 +292,16 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #1116;
-    height: 175px;
+    background: #1119;
+    padding: 10px 0;
   }
   .next-button {
     border: 1px solid black;
     box-shadow: 1px 1px black;
     border-radius: 8px;
   }
-   .w-100{
-    object-fit: scale-down;
-    height: 500px;
+  .carousel-item {
+    max-height: 500px;
   }
 }
 .accordion {
@@ -484,6 +494,11 @@ nav {
     .nav-link {
       width: fit-content;
       min-width: 0;
+    }
+    .nav-pills .nav-link,
+    .nav-pills .show > .nav-link {
+      width: 45%;
+      text-align: center;
     }
   }
   .intro-forms .text-end {
