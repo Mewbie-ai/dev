@@ -114,6 +114,7 @@ nav {
     border-radius: 50%;
     opacity: 1;
     box-shadow: 1px 1px $primary;
+    max-height: 100px;
   }
   .carousel-indicators .active {
     background: $secondary;
@@ -302,6 +303,7 @@ nav {
   }
   .carousel-item {
     max-height: 500px;
+    overflow: hidden;
   }
 }
 .accordion {
